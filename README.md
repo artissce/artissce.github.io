@@ -1,5 +1,5 @@
-# artissce.github.io
-Proyecto Programacion Web 1
+# Proyecto Programacion Web 1
+
 
 Las páginas web han sido creadas con diferentes tecnologías, básicamente HTML, CSS y JAVASCRIPT, en su mayoría, sin ser dinámicas, pero si mostrando la información de una manera ágil y con un diseño adecuado. 
 
