@@ -427,3 +427,18 @@ footer{
         width:90%;
     }
 }
+
+/* FAQ */
+
+.accordion_button {
+  display:block;
+  width: 100%;
+  padding:15px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  background-color:#333333;
+  color: #ffffff;
+  text-align: left;
+  transition: background 0.2s;
+}
