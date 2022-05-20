@@ -73,8 +73,8 @@ header{
   margin-bottom: 15px;
 }
 .contenido-textos h3 span{
-  background: white;
-  color:black;
+  background: #7F7FD5;
+  color:white;
   border-radius: 50%;
   display: inline-block;
   text-align:center;
