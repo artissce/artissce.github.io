@@ -14,11 +14,36 @@ body
   color: #fffcf2;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden; }
+.wave{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
 
+header .textos-header{/*Texto encima de la imagen*/
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size:50px;
+    color:#1a1822;
+}
+
+.textos-header h2{
+    font-size:30px;
+    font-weight: 300;
+    color:#1a1822;
+}
 a
 {
   text-decoration: none;
-  color: #232323;
+  color: #7F7FD5;
   
   transition: color 0.3s ease;
 }
