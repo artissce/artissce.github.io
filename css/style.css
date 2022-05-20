@@ -327,3 +327,59 @@ figure.snip0045:hover > img,
 figure.snip0045.hover > img {
   left: -12%;
 }
+/*footer*/
+
+footer{
+    background-color: #67666b;
+    padding: 60px 0 30px 0;
+    margin:auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display:flex;/*despliega los tres a la vez*/
+    width:90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom:50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align:center;
+}
+
+.content-foo h4{
+    color:#fff;
+    border-bottom:3px solid #a2d2ff;
+    padding-bottom:5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color:rgb(211, 206, 206);
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin:20px 0 0 0;
+    color:#9e9797;
+}
+
+@media screen and (max-width:900px){/*adapata la pantalla con menos de 500 px*/
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width:90%;
+    }
+}
