@@ -502,13 +502,13 @@ footer{
 }
 
 .outer-container {/*tamano minimo de la barra*/
-  min-height: 500px;
+  min-height: 400px;
   bottom: 0%;
   position: relative;
 }
 
 .chat-container {
-  max-height: 500px;
+  max-height: 400px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -618,6 +618,7 @@ footer{
 }
 
 
+
 @media screen and (max-width:900px){/*adapata la pantalla con menos de 500 px*/
     header{
         background-position: center;
@@ -634,7 +635,7 @@ footer{
     .imagen-about-us{
         width:90%;
     }
-    /*chat bot*/
+    /*chat*/
     .full-chat-block {
       width: 100%;
       border-radius: 0px;
