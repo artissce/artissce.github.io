@@ -1,6 +1,7 @@
 /*Banner proyectos*/
 .portafolio{
     background-color:#f2f2f2;
+    border-radius: 5px;
   }
   
   .galeria-port{
@@ -24,9 +25,11 @@
     height:100%;
     object-fit:cover;
     display:block;
+    border-radius: 5px;
   }
   
   .hover-galeria{
+    border-radius: 5px;
     position: absolute;
     width:100%;
     height: 100%;
@@ -47,7 +50,7 @@
   .hover-galeria p{
     color: white;
     justify-content: center;
-  
+    transition:ease-in .4;
   }
   
   .imagen-port:hover .hover-galeria{
@@ -55,11 +58,23 @@
   }
 
   /*proyectos*/
+  .proy1{
+    /*display:grid;
+    grid-template-columns:repeat(2,1fr);*/
+    align-items:center;
+  }
   .contenedor-proyect{
     display: flex;
     justify-content:space-evenly;
   }
+  .proy .contenido-textos{
+    width: 48%;
+  }
   a.pag{
     font-size: medium;
     color: #a2d2ff;
+  }
+  .img-proy{
+    width: 25%;
+    float:right;
   }
