@@ -1,6 +1,7 @@
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 
+/*FUncion para levantar la barra - ERROR*/
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
@@ -15,7 +16,7 @@ for (let i = 0; i < coll.length; i++) {
 
     });
 }
-
+/*funcion para dar la hora*/
 function getTime() {
     let today = new Date();
     hours = today.getHours();
@@ -33,9 +34,9 @@ function getTime() {
     return time;
 }
 
-// Gets the first message
+/*Primer mensake*/ 
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
+    let firstMessage = "En que te puedo ayudar?"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -46,7 +47,7 @@ function firstBotMessage() {
 
 firstBotMessage();
 
-// Retrieves the response
+//respuestas
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
@@ -60,7 +61,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "UPSLP es lo mejor!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -94,7 +95,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("Yo amo a la USPLP!")
 }
 
 // Press enter to send a message
