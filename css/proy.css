@@ -58,14 +58,17 @@
   }
 
   /*proyectos*/
-  .proy1{
-    /*display:grid;
-    grid-template-columns:repeat(2,1fr);*/
+  .contenido-proyect{
+    padding:60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
     align-items:center;
-  }
-  .contenedor-proyect{
-    display: flex;
-    justify-content:space-evenly;
   }
   .proy .contenido-textos{
     width: 48%;
@@ -75,6 +78,6 @@
     color: #a2d2ff;
   }
   .img-proy{
-    width: 25%;
-    float:right;
+    width: 45%;
+    border-radius: 50%;
   }
