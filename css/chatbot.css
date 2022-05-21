@@ -161,21 +161,6 @@ to {
 
 
 @media screen and (max-width:900px){/*adapata la pantalla con menos de 500 px*/
-header{
-    background-position: center;
-}
-.contenedor-sobre-nosotros{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sobre-nosotros .contenido-textos{
-    width: 90%;
-}
-
-.imagen-about-us{
-    width:90%;
-}
 /*chat*/
 .full-chat-block {
   width: 100%;
