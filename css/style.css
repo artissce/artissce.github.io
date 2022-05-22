@@ -66,9 +66,9 @@ header{
 }
 
 /*nav*/
-
-.bgcolor.scrolled{
-  color:black;
+.navbar-fixed-top.scrolled {
+  background-color: black !important;
+  transition: background-color 200ms linear;
 }
 /*about*/
 .contenedor-sobre-nosotros{
