@@ -479,18 +479,7 @@ footer{
 	padding: 10px;
 }
 
-/*cv*/
-.cv{
-  box-align:center;
-  
-}
-.cv img{
-  left:250px;
-  padding:50px;
-  width: 90%;
-  border:2px;
-  
-}
+
 /*adapata la pantalla con menos de 500 px*/
 @media screen and (max-width:900px){
     header{
