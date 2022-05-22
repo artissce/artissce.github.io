@@ -1,7 +1,7 @@
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 
-/*FUncion para levantar la barra - ERROR*/
+/*FUncion para levantar la barra */
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
@@ -95,7 +95,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Yo amo a la USPLP!")
+    buttonSendText("Yo amo a la UPSLP!")
 }
 
 // Press enter to send a message
