@@ -12,6 +12,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/formu.css">
 	<link rel="stylesheet" href="../css/chatbot.css">
 	<link rel="javascript" href="../js/JS.js">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -70,20 +71,24 @@
 	</div>
 	</header>
 	<!--Formulario - AGREGAR CSS-->
-    <section id="cajaformulario">
-		<h2 class="titulo">Formulario</h2>
-		<form name="formulario"> 
-			<p>Nombre:<br><input type="text" name="clave" id="clave"></p> 
-			<p>Correo electronico:<br><input type="email" name="email" id="email" required></p>
-			<p>Comentario:<br><textarea name="text" id="texto"></textarea></p>
-			<p><input type="button" name="grabar" id="grabar" value="Publicar comentario"></p>
-			<p><input type="button" value="Borrar datos" onclick="elimina()"></p>
-		</form>
-	</section>
 
-	<section id="cajadatos">
-		No hay comentarios todavía
-	</section>
+    <div class="contenedor" id="cajaformulario">
+		<h2 class="titulo">Formulario</h2>
+		<div class="formulario">
+		<form class="formu" name="formulario"> 
+			<p>Nombre <i class="fas fa-user"></i><br><input placeholder="Escriba aqui" type="text" name="clave" id="clave"></p> 
+			<p>Correo electronico <i class="fas fa-envelope"></i><br><input placeholder="Escriba aqui" type="email" name="email" id="email" required></p>
+			<p>Comentario <br><textarea placeholder="Escriba aqui" name="text" id="texto"></textarea></p>
+			<p><input class="envio" type="button" name="grabar" id="grabar" value="Publicar comentario"></p>
+			<p><input class="delete" type="button" value="Borrar datos" onclick="elimina()"></p>
+		</form>
+		<div class="cajadatos" id="cajadatos">
+			No hay comentarios todavía
+		</div>
+	</div>
+	</div>
+
+	
 	<!--Chatbot-->
 	<div class="chat-bar-collapsible">
 		<button id="chat-button" type="button" class="collapsible">Habla conmigo!

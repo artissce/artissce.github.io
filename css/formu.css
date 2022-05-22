@@ -1,0 +1,15 @@
+.formulario{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.cajadatos{
+    height:200px;
+    width: 300px;
+    background-color: #a2d2ffc9;
+    padding:5px;
+    border-radius:2px;
+}
+
+
