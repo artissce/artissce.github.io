@@ -24,7 +24,7 @@ body
 }
 .titulo{
     color:#a2d2ff;
-    font-size:30px;
+    font-size:50px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -99,6 +99,20 @@ header{
   padding:0 0 30px 15px;
   font-weight: 300;
   text-align:justify;
+}
+.b-cv{
+  
+  height: 50px;
+  width: 500px;
+  padding:10px 20px;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(176, 68%, 74%), hsla(219, 67%, 72%), hsla(240, 51%, 67%));
+  background: linear-gradient(to right, hsla(176, 68%, 74%), hsla(219, 67%, 72%), hsla(240, 51%, 67%));
+  color: white;
+  border:none;
+  border-radius:20px;
+  cursor: pointer;
+  box-shadow:1px 3px 11px 5px;
 }
 /*Barra de navegacion*/
 
