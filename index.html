@@ -206,8 +206,8 @@ for(i=0; i<accordion.length;i++){
 
 window.addEventListener('scroll', function() {
 	let header=document.querySelector('header');
-
-	header.classList.toggle('scrolling-active')
+	let windowPosition= window.scrollY>0;
+	header.classList.toggle('scrolling-active',window.scrollY >0);
 })
 	</script>
 </body>
