@@ -67,8 +67,8 @@ header{
 
 /*nav*/
 
-.scrolling-active{
-  background-color:black;
+.bgcolor.scrolled{
+  color:black;
 }
 /*about*/
 .contenedor-sobre-nosotros{

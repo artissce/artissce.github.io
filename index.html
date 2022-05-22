@@ -20,7 +20,7 @@
 	</head>
 	<header>
 		
-		<nav class="navbar fixed-top">
+		<nav class="navbar fixed-top bgcolor">
 			  <a id="brand"style="padding-top:35px;" class="navbar-brand" href="#">PORTAFOLIO</a>
 			<div id="menuToggle">
 				<input type="checkbox" />
@@ -201,14 +201,13 @@
 for(i=0; i<accordion.length;i++){
     accordion[i].addEventListener('click', function(){
         this.classList.toggle('active')
-    })
+    });
 }
 
-window.addEventListener('scroll', function() {
-	let header=document.querySelector('header');
-	let windowPosition= window.scrollY>0;
-	header.classList.toggle('scrolling-active',window.scrollY >0);
-})
+$(window).scroll(function(){
+
+	$('nav').toggleClass('scrolled',$(this).scrollTop()>5);
+});
 	</script>
 </body>
 </html>
