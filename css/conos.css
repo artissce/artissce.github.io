@@ -25,3 +25,21 @@
     position:relative;
     left:100px;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    
+}
+.cards card h3{
+    padding:15px;
+    text-align:center;
+    color:#a2d2ff;
+    font-size:25px;
+}
+.cards card h4{
+    font-size:large;
+    padding:10px;
+}
