@@ -20,7 +20,7 @@
 	</head>
 	<header>
 		
-		<nav class="navbar fixed-top bgcolor">
+		<nav class="navbar-fixed-top ">
 			  <a id="brand"style="padding-top:35px;" class="navbar-brand" href="#">PORTAFOLIO</a>
 			<div id="menuToggle">
 				<input type="checkbox" />
@@ -203,11 +203,13 @@ for(i=0; i<accordion.length;i++){
         this.classList.toggle('active')
     });
 }
-
-$(window).scroll(function(){
-
-	$('nav').toggleClass('scrolled',$(this).scrollTop()>5);
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
 });
+
 	</script>
 </body>
 </html>
