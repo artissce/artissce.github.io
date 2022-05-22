@@ -513,7 +513,7 @@ footer{
   font-weight: 300;
   text-align: justify;
 }
-/*CLIENTES - habilidades*/
+/*habilidades*/
 .cards{
     
   display: flex;
@@ -521,7 +521,9 @@ footer{
   justify-content: space-between;
   align-items: center
 }
-
+.puntos{
+  list-style:none;
+}
 .cards .card{
   display: flex;
   width: 46%;
@@ -557,9 +559,12 @@ footer{
   width: 60%;
   color: #fff;
 }
-
+.cards .card > .contenido-texto-card h4:hover{
+  color:#e9e3e3;
+  transition: color 0.3s ease;
+}
 .cards .card > .contenido-texto-card p{
-  font-weight: 300;
+  font-weight: 250;
   padding-top: 5px;
 }
 
