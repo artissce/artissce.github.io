@@ -478,6 +478,85 @@ footer{
 	height: 150px;
 	padding: 10px;
 }
+/*Certificados*/
+
+.certis{
+  background: #f2f2f2;
+  padding-bottom: 30px;
+}
+
+.certis-cont{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certis-ind{
+  width: 28%;
+  text-align: center;
+}
+
+.certis-ind img{
+  width: 90%;
+}
+
+.certis-ind h3{
+  margin: 10px 0;
+}
+
+.certis-ind p{
+  font-weight: 300;
+  text-align: justify;
+}
+/*CLIENTES - habilidades*/
+.cards{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+}
+
+.cards .card{
+  display: flex;
+  width: 46%;
+  height: 200px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.img1{
+  background-color: #a2d2ff;
+}
+.img2{
+  background-color:#7F7FD5;
+}
+.img3{
+  background-color: hsla(176, 68%, 74%);
+}
+.cards .card img{
+  
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+
+}
+
+.cards .card > .contenido-texto-card{
+  padding:15px;
+  width: 60%;
+  color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+  font-weight: 300;
+  padding-top: 5px;
+}
 
 
 /*adapata la pantalla con menos de 500 px*/
