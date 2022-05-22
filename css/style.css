@@ -240,7 +240,7 @@ a:hover
     transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 }
-
+/*perfil*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 470px;
@@ -479,6 +479,10 @@ footer{
 	padding: 10px;
 }
 
+/*cv*/
+#cv{
+  width:1500px;
+}
 /*adapata la pantalla con menos de 500 px*/
 @media screen and (max-width:900px){
     header{
