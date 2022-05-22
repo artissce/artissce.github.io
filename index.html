@@ -203,6 +203,12 @@ for(i=0; i<accordion.length;i++){
         this.classList.toggle('active')
     })
 }
+
+window.addEventListener('scroll', function() {
+	let header=document.querySelector('header');
+
+	header.classList.toggle('scrolling-active')
+})
 	</script>
 </body>
 </html>
