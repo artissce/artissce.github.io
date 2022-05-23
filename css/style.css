@@ -19,7 +19,10 @@ body
   color: #000000;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden; }
-
+.bar{
+	color:black;
+	background:black;
+}
 .contenedor { /*ajusta el contenido*/
     padding: 60px 0;
     width: 90%;
