@@ -80,7 +80,7 @@
   .img-proy{
     width: 45%;
     border-radius: 50%;
-
+    box-shadow:1px 3px 6px 3px;
   }
   .titulo:hover{
     color:black;
