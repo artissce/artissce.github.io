@@ -39,7 +39,7 @@
     margin-bottom: 60px;
 }
 .cards .card{
-    background: #a2d2ff;
+    background: #74a1ca;
     display: flex;
     width: 46%;
     height: 300px;
@@ -50,7 +50,7 @@
 }
 
 .cards .card img{
-    width: 100px;
+    width: 150px;
     height: 100px;
     object-fit: cover;
     border: none;
@@ -65,4 +65,7 @@
 .cards .card > .contenido-texto-card p{
     font-weight: 250;
     padding-top: 5px;
+}
+.contenido-texto-card h4:hover{
+    color:white;
 }
