@@ -80,4 +80,15 @@
   .img-proy{
     width: 45%;
     border-radius: 50%;
+
+  }
+  .titulo:hover{
+    color:black;
+  }
+  .img-proy:hover{
+    width: 45%;
+    border-radius: 50%;
+
+      transform:translate(20px, -23px);
+      transition: transform 0.3s ease;
   }
