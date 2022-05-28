@@ -37,7 +37,7 @@ function elimina(){
     }
 }
 
-function ubicacion() {
+function ubicacion(position) {
  var status = document.querySelector('#status');
  status.innerHTML = "Ubicado";
  var mapcanvas = document.createElement('div');
