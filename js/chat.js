@@ -1,3 +1,5 @@
+// import getBotResponse from './response.js'
+
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 
