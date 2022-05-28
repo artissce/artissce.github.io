@@ -37,9 +37,7 @@ function elimina(){
     }
 }
 
-
-//https://www.atrioweb.com/blog/html5/geolocalizacion-con-html5
-function ubicacion(position) {
+function ubicacion() {
  var status = document.querySelector('#status');
  status.innerHTML = "Ubicado";
  var mapcanvas = document.createElement('div');
