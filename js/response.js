@@ -1,3 +1,8 @@
+
+/*
+Asi la funcion puede ser usada por otros archivs
+como una libreria al exportar sus funciones
+*/
 function getBotResponse(input) {
     //rock paper scissors
     if (input == "rock") {
