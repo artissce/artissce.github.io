@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header style="text-align:center;">
+        <h1>Formulario</h1>
+    </header>
+    <hr>
+    <section>
+    <table style="width:100%" bgcolor="#EEEEEE">
+    <tr>
+        <th colspan="2" bgcolor="#3dc2c7" align="left">
+            <img src="./img2/sico logo.png" >
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <b>DATOS DEL ALTA DE USUARIO</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form action="/action_page.php" method="post"></form>
+                <label for="fname">Nombre*:</label>
+                <input type="text" id="fname" name="fname" required>
+                <br><br>
+                    
+                <label for="lmname">ApellidoM*:</label>
+                <input type="text" id="lmname" name="lmname" required>
+                <br><br>
+
+                <label for="id">Documento Id:</label>
+                <input type="text" id="id" name="id">
+                <br><br>
+
+                <label for="nat">Nacionalidad:</label>
+                <select name="nat">
+                    <option>Mexicana</option>
+                    <option>Chilena</option>                        
+                    <option>Colombiana</option>
+                    <option>Cubana</option>
+                    <option>Puertoriquena</option>
+                    <option>Argentina</option>
+                </select>
+        </td>
+        <td>
+
+                <label for="lpname">ApellidoP*:</label>
+                <input type="text" id="lpname" name="lpname" required>
+                <br><br>
+
+                <label for="naci">Fecha de nacimiento*:</label>
+                <input type="date" min="1995-01-01" id="naci" name="naci" required>
+                <br><br>
+
+                <label for="genero">Genero*&nbsp;&nbsp;&nbsp;</label>
+                <label for="hombre">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="radio" id="hombre" name="genero" value="Masculino" >                    
+                <label for="hombre">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="Femenino">
+                <label for="femenino">Femenino</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+                <label for="preparatoria">Grado<br>Academico*&nbsp;&nbsp;</label>
+                <input type="checkbox" id="preparatoria" name="grado" value="preparatoria">
+                <label for="grado">Preparatoria&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" id="licenciatura" name="grado" value="Licenciatura">
+                <label for="grado">Licenciatura&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" id="maestria" name="grado" value="Maestria">
+                <label for="grado">Maestria&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" id="doctorado" name="grado" value="Doctorado">
+                <label for="grado">Doctorado</label>
+                <br><br>
+
+                <label for="uni">Universidad*:</label>
+                <input type="text" id="uni" name="uni" required>
+                <br><br>
+                <label for="cono">Area de conocimiento*:</label>
+                <input type="text" id="cono" name="cono" required><br>
+                <br>
+                &nbsp;
+        </td>
+    </tr>
+    </table >
+    <br>
+    <table style="width:100%" bgcolor="#EEEEEE">
+        <tr>
+            <th>
+                <b>DATOS DE CONTACTO</b>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <label for="email">Email*</label>
+                <input type="text" id="email" name="email">
+                <br><br>
+                <label for="tel">Telefono*</label>
+                <input type="tel" id="tel" name="tel">
+                <br>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <br>
+       <input type="submit" value="guardar"><br>
+       <input type="reset" value="volver">      
+    </form>
+</section>
+</body>
+<footer>
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

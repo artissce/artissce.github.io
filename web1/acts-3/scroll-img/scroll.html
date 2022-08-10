@@ -1,0 +1,52 @@
+
+<html> 
+<head> 
+    <title>Rotaci�n de banners con Javascript.</title> 
+<script> 
+//creo array de im�genes 
+array_imagen = new Array(3); 
+array_imagen[0] = new Image(150,100) ;
+array_imagen[0].src = "img1.bmp" ;
+array_imagen[1] = new Image(150,100);
+array_imagen[1].src = "img2.bmp" ;
+array_imagen[2] = new Image(150,100) ;
+array_imagen[2].src = "img3.bmp" ;
+
+//creo el array de URLs 
+array_url = new Array(3);
+array_url[0] = "http://www.ibm.org/" ;
+array_url[1] = "http://www.microsoft.com/" ;
+array_url[2] = "http://www.suse.com/"; 
+
+//variable para llevar la cuenta de la imagen siguiente 
+contador = 0;
+
+//funci�n para rotar el banner 
+function alternar_banner(){ 
+    window.document["banner"].src = array_imagen[contador].src ;
+    window.document.links[0].href = array_url[contador]; 
+    contador ++; 
+    if(contador==3)contador=0 ;
+    setTimeout("alternar_banner()",1000) ;
+} </script> 
+</head> 
+
+<body onLoad="alternar_banner()"> 
+<header>
+    <h1>Rotacion de banners</h1>
+</header>
+<a href="http://www.upslp.edu.mx"><img src="img3.bmp" name="banner" width=150 height=100 border=0></a> 
+
+</body> 
+<br><br><br>
+    <a href="../../UNIDAD 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>
+
+ 

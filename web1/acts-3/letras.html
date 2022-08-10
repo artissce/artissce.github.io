@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Letras</title>
+	<script type="text/javascript">
+        let aux;
+        let x;
+        let cadena = "";
+        let letra1=prompt("Dame una letra");
+        let letra2=prompt("Dame otra letra");
+        if(letra2<letra1){
+        	aux=letra2;
+        	letra2=letra1;
+        	letra1=aux;
+        }
+        let abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","U","V","W","X","Y","Z"];
+        for(x in abc){
+        	if(abc[x]>=letra1 && abc[x]<=letra2){
+        		cadena += abc[x] + ", ";
+        	}
+        }
+        alert(cadena);
+	</script>
+</head>
+<body>
+<h1>Ejercicio letras</h1>
+<p>Un parrafo de texto</p>
+<br><br><br>
+    <a href="../../UNIDAD 3.html 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

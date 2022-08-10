@@ -1,0 +1,304 @@
+<!DOCTYPE html> 
+<html>
+<head>   
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: #F2F2F2;
+        }
+        p{
+            color: gray;
+            font-family: Calibri, sans-serif;
+            font-size: 23px;
+            text-align: left;
+        }
+        b{
+            color: #525252;
+            font-size: 32px;
+        }
+        #sub{
+            text-decoration: underline;
+        }
+        table{
+            background-color: #F2F2F2;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin: 100px;
+            
+        }
+        #graf{
+            margin-bottom: 0px;
+        }
+        #for{
+            border: 3px solid black;
+            text-align: left;
+            margin-top: 0px;
+            width: 84%;
+        }
+        div{
+            float: left;
+            border: 2px solid blue;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 40px;
+        }
+        img{
+            height: 75px;
+        }
+        #logo{
+            float: right;
+            height: 30px;
+        }
+        #sta{
+            height: 60px;
+        }
+        #compu{
+            float: left;
+            height: 300px;
+        }
+        #form{
+            border: 2px solid orange;
+        }
+        a{
+            float: left;
+            font-family: Calibri, sans-serif;
+            font-size: 20px;
+        }
+        #a{
+            float: none;
+            font-size: 15px;
+        }
+        td{
+            border: 10px;
+        }
+        small{
+            float: left;
+            text-align: left;
+            color: gray;
+        }
+        #submit{
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: darkgray;
+            width: 80px;
+
+        }
+    </style>
+<title>Ejercicio de CSS</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Ejercicio de CSS </h1>
+    </header> 
+    <section>
+        <table id="graf">
+            <tr>
+                <td colspan="3">
+                    <p><b>Los lenguajes de programación más usado</b><br>
+                    Porcentaje de uso de los lenguajes de programación más populares del mundo*</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 16%;"><img src="./img_equipo/python.png" alt="python" width="150px"></td>
+                <td colspan="3">
+                    <div style="width: 79%;"></div><a>&nbsp; 25,95%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/java.png" alt="java" width="30px" ></td>
+                <td colspan="3">
+                    <div style="width: 63%"></div><a>&nbsp; 21,42%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/javascript.png" alt="javascript" width="70px" ></td>
+                <td colspan="3">
+                    <div style="width: 30%"></div><a>&nbsp; 8,26%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/c.png" alt="c#" width="100px" ></td>
+                <td colspan="3">
+                    <div style="width: 27%"></div><a>&nbsp; 7,62%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/php.png" alt="php" width="120px"></td>
+                <td colspan="3">
+                    <div style="width: 26%"></div><a>&nbsp; 7,37%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/c++.png" alt="c++" width="75px" ></td>
+                <td colspan="3">
+                    <div style="width: 22%"></div><a>&nbsp; 6,31%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/r.png" alt="r" width="80px" ></td>
+                <td >
+                    <div style="width: 33%"></div><a>&nbsp; 4,04%</a>
+                </td>
+                <td  style="width: 30%;" rowspan="5">
+                    <img id="compu" src="./img_equipo/compu.PNG" alt="compu" width="400px">
+                </td>
+                <td style="width: 10%;">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/objectivec.png" alt="objectivec" width="140px" ></td>
+                <td>
+                    <div style="width: 27%"></div><a>&nbsp; 3,15%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/swift.png" alt="swift" width="120px" ></td>
+                <td>
+                    <div style="width: 22%"></div><a>&nbsp; 2,56%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/matlab.png" alt="matlab" width="120px" ></td>
+                <td>
+                    <div style="width: 17%"></div><a>&nbsp; 2,04%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/typescript.png" alt="typescript" width="120px" ></td>
+                <td>
+                    <div style="width: 10%"></div><a>&nbsp; 1,57%</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./img_equipo/ruby.png" alt="ruby" width="140px" ></td>
+                <td>
+                    <div style="width: 9%"></div><a>&nbsp; 1,53%</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="3">
+                    <small>
+                        * Datos procedentes del índice PYPL. Este se basa en las búsquedas<br>
+                        &nbsp;&nbsp;&nbsp;en Google de tutoriales de lenguajes de programación.<br>
+                    </small>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="sta" src="./img_equipo/statista_es.PNG" alt="statista_es" width="140px">
+                </td>
+                <td colspan="3">
+                    <small>
+                        Datos de enero de 2019<br><br>
+                        Fuente: PYPL
+                    </small>
+                    <img id="logo" src="./img_equipo/statista.png" alt="statista" width="140px">
+                </td>
+            </tr>
+        </table>
+        <BR>
+        <table id="for">
+            <form>
+                <tr>
+                   <th colspan="4" id="sub">SUS DATOS:</th>
+                </tr>
+                <tr>
+                   <td>
+                       <label for="fname">NOMBRE *</label>
+                   </td>
+                   <td colspan="3">
+                   <input id="form" type="text" id="fname" name="fname" style="width: 300px;" required>
+                   </td>
+                </tr>
+                <tr>
+                   <td>
+                       <label for="naci">F. NACIMIENTO</label>
+                   </td>
+                   <td colspan="3">
+                       <input id="form" type="date" min="1995-01-01" id="naci" name="naci" style="width: 303px;" required>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="correo">CORREO-E</label>
+                    </td>
+                    <td colspan="3">
+                        <input id="form" type="email" id="correo" name="correo" style="width: 300px;" required>
+                    </td>
+                 </tr>
+                <tr>
+                   <td colspan="4">INDIQUE 5 LENGUAJES DE SU INTERES:</td>
+                </tr>
+                <tr>
+                   <td><input type="checkbox" id="PYTHON" name="progra" value="PYTHON">
+                   <label for="progra">PYTHON</label></td>
+   
+                   <td><input type="checkbox" id="C" name="progra" value="C">
+                   <label for="progra">C#</label></td>
+   
+                   <td><input type="checkbox" id="R" name="progra" value="R">
+                   <label for="progra">R</label></td>
+   
+                   <td><input type="checkbox" id="MATLAB" name="progra" value="MATLAB">
+                   <label for="progra">MATLAB</label></td>
+                </tr>
+                <tr>
+                   <td><input type="checkbox" id="JAVA" name="progra" value="JAVA">
+                   <label for="progra">JAVA</label></td>
+   
+                   <td><input type="checkbox" id="PHP" name="progra" value="PHP">
+                   <label for="progra">PHP</label></td>
+   
+                   <td><input type="checkbox" id="OBJETIVE C" name="progra" value="OBJETIVE C">
+                   <label for="progra">OBJETIVE C</label></td>
+   
+                   <td><input type="checkbox" id="TYPESCRIPT" name="progra" value="TYPESCRIPT">
+                   <label for="progra">TYPESCRIPT</label></td>
+                </tr>
+                <tr>
+                   <td><input type="checkbox" id="JavaScript" name="progra" value="JavaScript">
+                   <label for="progra">JavaScript</label></td>
+   
+                   <td><input type="checkbox" id="C++" name="progra" value="C++">
+                   <label for="progra">C++</label></td>
+   
+                   <td><input type="checkbox" id="Swift" name="progra" value="Swift">
+                   <label for="progra">SWIFT</label></td>
+    
+                   <td><input type="checkbox" id="RUBY" name="progra" value="RUBY">
+                   <label for="progra">RUBY</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>&nbsp;</td>
+                   <td> 
+                    <input id="submit" type="submit" value="Enviar">
+                   </td>
+                </tr>
+            </form>
+        </table>
+    </section>
+    <br><br>
+    <a href="../UNIDAD 2.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../portafolio.html">Regresar al menu principal</a>
+    <br>
+    </body>
+    <footer style="text-align:center;"> 
+        <hr>
+        Derechos Reservados &copy; 2022<br>
+        &copy Saúl Cervantes Candia - 177927
+        <hr>
+        Ana Karen Cuenca Esquivel - 177932<br>
+        UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>
+        Programación Web 1
+    </footer>
+</html>
