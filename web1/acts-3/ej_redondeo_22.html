@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.non{ background-color: BLUE;}
+	.par{ background-color: GRAY;}
+	
+</style>	
+<script>
+function tablas()
+{
+	/*dom-> document object moment->tomamos los elementos de 
+	una pagina y modificar sus datos y caracteristicas*/
+	var tabla1 = "";
+	let tabla2 = "";
+	var i,j;//i->alumnos j->calificaciones, columnas
+	var nom="Alumno";//formar el nombre, usa concatenar
+	var calif=[0.0,0.0,0.0,0.0,0.0];//guarda valores flotantes
+	var decimal=0.0;//sirve para saber la parte decimal de cada cali
+	var numero1 = 4564.34567;//testear
+	var val1, val2, val3;
+
+	//forma la tabla1
+	tabla1+="<table border='1'><tr><th>NOMBRE</th><th>P1</th><th>P2</th><th>P3</th><th>FINAL</th></tr>";
+	//formar tabla 2
+	tabla2+="<table border='1'><tr><th>NOMBRE</th><th>P1</th><th>P2</th><th>P3</th><th>FINAL</th><th>TOTAL</th></tr>";
+	for (i=0; i < 10; i++) {//genera los nombres
+		    nom="Alumno"+i;//7 caracteres
+		    if(i%2==0){
+		    	tabla1+="<tr class='par'><td>"+nom+"</td>";
+				tabla2+="<tr class='par'><td>"+nom+"</td>";
+			}
+			else{
+				tabla1+="<tr class='non'><td>"+nom+"</td>";
+				tabla2+="<tr class='non'><td>"+nom+"</td>";
+			}
+		    calif[4]=0;
+		    for (j=0; j< 4; j++) {	
+		    	calif[j]=Math.random()*10;
+		    	calif[j]=calif[j].toFixed(2);	//5.58
+		    	decimal=calif[j]-Math.trunc(calif[j]);//5.58-5=.58 parte decimal 
+		    	tabla1+="<td>"+calif[j]+"</td>";
+				if(calif[j]<7){//no aprobatoria
+					if(decimal <0.4) decimal=0;
+					else decimal=0.5;
+				}
+				else{
+					if(decimal <0.25) decimal=0;
+					else if(decimal=0.25 && decimal<0.75)decimal=0.5;
+						else decimal=1;
+				}
+		    	calif[j]=Math.trunc(calif[j])+decimal;
+				tabla2+="<td>"+calif[j]+"</td>";
+			}
+			calif[4]=(calif[0]*0.2)+(calif[1]*0.2)+(calif[2]*0.2)+(calif[3]*0.4);
+			tabla2+="<td>"+calif[j]+"</td></tr>";//j=4
+			tabla1+="</tr>";			
+	}
+	tabla1+="</table>";
+	tabla2+="</table>";
+	
+	document.getElementById("datos").innerHTML = tabla1 + tabla2 ;
+}
+</script>
+</head>
+<body>
+<h2>Tabla dinamica</h2>
+<p id="datos" onclick="tablas()"> click</p>
+<br><br><br>
+    <a href="../UNIDAD 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

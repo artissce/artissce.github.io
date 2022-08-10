@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado con html</title>
+    <script>
+        function adivina(pwd){
+            //var oculto = "------";
+            var oculto=["","","","","",""];
+            var oc="";
+            var intentos = 1,i=0;
+            var car = '';
+            do{
+                car = prompt("Intentos" + intento + "\nCaracter:")
+                for(i=0;i<pwd.length;i++){
+                    if(car==pwd.charAt(i)){
+                    oculto[i]=car;//
+                    }
+                }
+                alert(oculto);
+                intentos++;
+                oc=oculto.join("");
+            }while(oculto!=pwd);
+            alert("PASS ENCONTRADA");
+        }
+        var pwd= "hola12"
+        adivina(pwd);
+        /*var pwd = ["h","o","l","a","1","2"];
+        var cad = ["h","o","l","a","1","2"];
+
+        if(pwd==cad){
+            alert("iguales");
+        }*/
+    </script>
+</head>
+<body>
+    <header><h1>Ahorcado con funciones</h1></header>
+    <p>Un párrafo de texto.</p>
+    <br><br><br>
+    <a href="../UNIDAD 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

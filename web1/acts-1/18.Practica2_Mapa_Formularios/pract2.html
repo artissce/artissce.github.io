@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 - Mapas y Formularios</title>
+</head>
+<body>
+    <header style="text-align:center;">Mapa de la ubicacion de la <b><i>UPSLP</i></b></header>
+    <hr/>
+    <section>
+        <article>
+        <img src="mapa_poli.png" alt="" usemap="#map">
+        <map name="map">
+            <area shape="rect" coords="517,22,585,314" alt="uni" href="https://www.upslp.edu.mx/upslp/?icemagproducts=cadi-2"/>
+            <area shape="rect" coords="835,674,924,767" alt="uni" href="https://www.upslp.edu.mx/upslp/?icemagproducts=cnt-centro-de-nuevas-tecnologias/">
+            <area shape="rect" coords="661,420,856,640" alt= "uni" href="https://www.upslp.edu.mx/upslp/?icemagproducts=cnt-centro-de-nuevas-tecnologias">
+            <area shape="rect" coords="941,487,1119,674" alt= "uni" href="https://www.upslp.edu.mx/upslp/?icemagproducts=cnt-centro-de-nuevas-tecnologias">
+            <area shape="rect" coords="517,564,593,606" alt="uni" href="https://ssu.upslp.edu.mx/ss/Home.aspx"/>
+            <area shape="rect" coords="636,695,708,737" alt= "uni" href="http://200.94.105.36/SIABUC_UPSLP/Home/BusquedaAvanzada">
+        </article>
+        <article>
+            <form action="pract2.html" method="post">
+                <fieldset>
+                    <legend>Encuesta de carreras</legend>
+                    <label for="nomb">Nombre:</label>
+                    <input typr="text" id="nomb" name="nomb"><br>
+                    <form>
+                        <labe for="mujer">Genero:</labe>
+                        <input type="radio" id="mujer" name="genero_1" value="Mujer">
+                        <label for="mujer">Mujer</laberl><br>
+                        <labe for="hombre">Genero:</labe>
+                        <input type="radio" id="hombre" name="genero_1" value="Hombre">
+                        <laberl for="hombre">Hombre</laberl><br>
+                    </form>
+                    <label for="num">Edad:</label>
+                    <input type="number" id="num" name="num"><br>
+                    <labe for="correo">Correo:</labe>
+                    <input type="email" id="correo" name="correo"><br>
+                    <label for="carrera">Carrera:</label>
+                    <select name="carrera">
+                        <option>ITI</option>
+                        <option>ITEM</option>
+                        <option>ITMA</option>
+                        <option>ISTI</option>
+                        <option>LAG</option>
+                        <option>MKT</option>
+                    </select>
+                </fieldset>
+                <input type="submit">
+            </form>
+        </article>
+    </section>
+    <hr/>
+    <footer>
+        <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+    </footer>
+</body>
+</html>

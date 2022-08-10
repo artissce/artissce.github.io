@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado con html</title>
+    <script>
+        function ahorcado()
+        {
+            var password = "artis6";
+            var respuesta;
+            var intentos=0;
+            var muestra=["","","","","",""];
+            var letra=0;
+            do{
+                do{
+                    respuesta =  prompt("Escribe un caracter: ", "a");
+                    var posicion = password.indexOf(respuesta);
+                    intentos+=1;
+                }while(posicion==-1);
+                muestra[posicion]=respuesta;
+                letra+=1;
+                var concatenar = muestra.join("");
+                alert("Intento " + intentos+ " " +concatenar);
+            }while(letra<6);
+           alert("CONTRASEÑA\n ENCONTRADA \n Numero de intentos "+intentos);
+        }
+        ahorcado();
+    </script>
+</head>
+<body>
+    <header><h1>Ahorcado con funciones</h1></header>
+    <p>Un párrafo de texto.</p>
+    <br><br><br>
+    <a href="../UNIDAD 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

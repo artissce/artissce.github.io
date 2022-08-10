@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Signos zodiacales</title>
+    </head>
+<body>
+  <header>
+    <h1>Conoce tu signo zodiacal!</h1>
+  </header>
+
+<p>Selecciona tu mes de nacimiento de la siguiente lista. Despues selecciona el dia</p>
+
+<select id="mes" onchange="diasFun()">
+  <option value="0">   </option>
+  <option value="1">ENERO</option>
+  <option value="2">FEBRERO</option>
+  <option value="3">MARZO</option>
+  <option value="4">ABRIL</option>
+  <option value="5">MAYO</option>
+  <option value="6">JUNIO</option>
+  <option value="7">JULIO</option>
+  <option value="8">AGOSTO</option>
+  <option value="9">SEPTIEMBRE</option>
+  <option value="10">OCTUBRE</option>
+  <option value="11">NOVIEMBRE</option>
+  <option value="12">DICIEMBRE</option>
+</select>
+
+<p id="demo"></p>
+
+<script>
+  function diasFun() {
+    var dias=[0,31,29,31,30,31,30,31,31,30,31,30,31];
+    var num;
+    var x = document.getElementById("mes").value;
+    var opDias;
+    opDias="<select id='dias' onchange='buscaSigno()'>";
+    for(num=1;num<=dias[x];num++){
+      opDias+="<option value="+num+">"+num+"</option>";
+    }
+    opDias+="</select>" + '<img id="img1" src="Imagen1.jpg" border="1" alt="imagen" width="500" height="450">';
+    document.getElementById("demo").innerHTML=opDias;
+  }
+
+  function buscaSigno(){
+    var img=["Imagen1.jpg","aries.png","tauro.png","geminis.png","cancer.png","leo.png","virgo.png","libra.png","escorpio.png","sagitario.png","capricornio.png","acuario.png","piscis.png"];
+    var mes = document.getElementById("mes").value;
+    var dia = document.getElementById("dias").value;
+    var img = document.getElementById("img1").src;
+    if((mes==3 && dia>=21) || mes==4 && dia<=20){
+      alert("Tu signo es: aries");
+      document.getElementById("img1").src="aries.png";
+      
+    }else{
+      //document.getElementById("img1").src=img[0];
+      if((mes==4 && dia>=21) || mes==5 && dia<=20){
+        alert("Tu signo es: tauro");
+        document.getElementById("img1").src="tauro.png";
+      }else{
+        //document.getElementById("img1").src=img[0];
+        if((mes==5 && dia>=21) || mes==6 && dia<=20){
+          alert("Tu signo es: geminis");
+          document.getElementById("img1").src="geminis.png";
+        }else{
+          //document.getElementById("img1").src=img[0];
+          if((mes==6 && dia>=21) || mes==7 && dia<=20){
+            alert("Tu signo es: cancer");
+            document.getElementById("img1").src="cancer.png";
+          }else{
+            //document.getElementById("img1").src=img[0];
+            if((mes==7 && dia>=21) || mes==8 && dia<=20){
+              alert("Tu signo es: leo");
+              document.getElementById("img1").src="leo.png";
+            }else{
+              //document.getElementById("img1").src=img[0];
+              if((mes==8 && dia>=21) || mes==9 && dia<=20){
+                alert("Tu signo es: virgo");
+                document.getElementById("img1").src="virgo.png";
+              }else{
+                //document.getElementById("img1").src=img[0];
+                if((mes==9 && dia>=21) || mes==10 && dia<=20){
+                  alert("Tu signo es: libra");
+                  document.getElementById("img1").src="libra.png";
+                }else{
+                  //document.getElementById("img1").src=img[0];
+                  if((mes==10 && dia>=21) || mes==11 && dia<=20){
+                    alert("Tu signo es: escorpio");
+                    document.getElementById("img1").src="escorpio.png";
+                  }else{
+                    //document.getElementById("img1").src=img[0];
+                    if((mes==11 && dia>=21) || mes==12 && dia<=20){
+                      alert("Tu signo es: sagitario");
+                      document.getElementById("img1").src="sagitario.png";
+                    }else{
+                      //document.getElementById("img1").src=img[0];
+                      if((mes==12 && dia>=21) || mes==1 && dia<=20){
+                        alert("Tu signo es: capricornio");
+                        document.getElementById("img1").src="capricornio.png";
+                      }else{
+                        //document.getElementById("img1").src=img[0];
+                        if((mes==1 && dia>=21) || mes==2 && dia<=19){
+                          alert("Tu signo es: acuario");
+                          document.getElementById("img1").src="acuario.png";
+                        }else{
+                          //document.getElementById("img1").src=img[0];
+                          if((mes==2 && dia>=20) || mes==3 && dia<=20){
+                            alert("Tu signo es: piscis");
+                            document.getElementById("img1").src="piscis.png";
+                          }else{
+                            document.getElementById("img1").src=img[0];
+                          } 
+                        } 
+                      } 
+                    } 
+                  } 
+                } 
+              } 
+            }
+          } 
+        }
+      } 
+    }
+  }
+</script>
+
+<footer> 
+  <hr>
+  <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</body>
+</html>
+

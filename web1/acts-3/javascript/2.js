@@ -1,0 +1,1 @@
+alerts("Un mensaje de prueba");

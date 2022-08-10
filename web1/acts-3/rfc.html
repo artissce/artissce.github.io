@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RFC</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		
+		</script>
+	</head>
+    <script>
+        /*Función para obtener el RFC*/
+    function R() {
+        var text=""; 
+        var error="";
+        var dato1="",dato2="",dato3="",dato4="",dato5="",dato6="",dato7=""; //Inicializamos cada dato del RFC vacío
+        var char=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9']
+        var dato1=document.getElementById("n").value; //Obtenemos el valor ingresado según su ID y lo almacenamos en dato1
+            if(dato1=="") error+="Falta ingresar nombre<br>"; //error si no se agrega dato
+            else dato1=dato1.substring(0,1); //digitos necesario para el rfc
+            
+        var dato2=document.getElementById("ap").value;
+            if(dato2=="") error+="Falta ingresar apellido paterno<br>";
+            else dato2=dato2.substring(0,2);
+        
+        var dato3=document.getElementById("am").value;
+            if(dato3=="") error+="Falta ingresar apellido materno<br>";
+            else dato3=dato3.substring(0,1);
+        
+            if(document.getElementById("bday").value) {
+                var dato4=document.getElementById("bday").value.substring(2,4);
+                var dato5=document.getElementById("bday").value.substring(5,7);
+                var dato6=document.getElementById("bday").value.substring(8,10); }
+            else error+="Falta ingresar fecha de nacimiento<br>";
+
+        var i;
+        text=dato2+dato3+dato1+dato4+dato5+dato6; //Concatenamos los valores del RFC
+            if (text=="") text="ERROR"; //Validar rfc
+            //numeros aleaotios
+            else {
+                for(i=0;i<3;i++) 
+                    dato7+=char[Math.floor(Math.random()*char.length)]; 
+                text+=dato7; } //Concatenamos la homoclave al RFC
+            document.getElementById("RFC").value= text.toUpperCase(); //mayusculas
+            document.getElementById("error").innerHTML=error; } //Mostramos si existe algún error
+    </script>
+	<body>
+		<header>
+			<h1>Obtener RFC</h1>
+		</header>
+		<form>
+			Ingresar nombre:<br>
+			<input type="text" name="nombre" id="n" required>
+			<br><br>Ingresar apellido paterno:<br>
+			<input type="text" name="ap" id="ap" required>
+			<br><br>Ingresar apellido materno:<br>
+			<input type="text" name="am" id="am" required>
+			<br><br>Ingresar fecha de nacimiento:<br>
+			<input type="date" name="bday" id="bday" required>
+			<br><br>Ingresar sexo:<br>
+			<input type="text" name="sex" id="sex">
+			<br><br><input type="button" name="enviar" id="enviar" value="Obtener RFC" onclick="R()">
+			<br><br>RFC:
+			<br><br><input type="text" name="RFC" id="RFC">
+			<p id="error"></p>
+		</form>
+		<br><br><br>
+    <a href="../UNIDAD 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

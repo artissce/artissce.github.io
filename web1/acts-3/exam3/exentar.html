@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabla dinamica</title>
+  
+	<style>
+		.img{
+			background: hsla(273,91%,27%, 0.7);
+			transition: transform .5s;
+		}
+		.img:hover{background-color: gray;transform: rotate(360deg);}
+	</style>
+
+</head>
+<body>
+	<header>
+		<h1>Tabla dinamica</h1>
+	</header>
+	<script>
+		var fila=3;
+		var col=3;
+		var datos=new Array(3);
+		var carta_sel=new Array(3); 	
+
+
+		function tabla(){
+			var texto="<table border=1>";
+			var check=[];
+			var i,j,num=0;
+
+			for(i=0;i<9;i++)
+				check[i]=0;
+			for(i=0;i<fila;i++){
+				datos[i]=new Array(3);
+				carta_sel[i]=new Array(3);
+				texto+="<tr>";
+				for(j=0;j<col;j++){
+					do{
+					num=Math.floor(Math.random()*9);
+					}while(check[num]==1);
+					check[num]++;
+					datos[i][j]=num;
+					texto+="<td><img class='img' src='"+num+".jpg' width=100 height=100 border=0></td>";
+				}
+			}
+			texto+="</table>";
+		  	document.getElementById('boton').style.display = 'none';
+		  	document.getElementById("tablero1").innerHTML = texto;
+		}
+		function CargarImagen(){
+			num=num
+		}
+	</script>
+
+	<input type="button" id = "boton" value="Da click para crear una tabla" onclick="tabla()">	
+	<p id="tablero1"></p>
+	<br><br><br>
+    <a href="../../UNIDAD 3.html 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>

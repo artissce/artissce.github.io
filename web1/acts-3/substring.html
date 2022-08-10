@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de substring</title>
+    <script> 
+        var mensaje = "Hola Mundo";
+        var porcion = mensaje.substring(2); // porcion = "la Mundo"
+        alert("Desde la poscion 2 "+porcion);
+        porcion = mensaje.substring(5); // porcion = "Mundo"
+        alert("Desde la poscion 5 "+porcion);
+        porcion = mensaje.substring(7); // porcion = "ndo
+        alert("Desde la poscion 7 "+porcion);
+
+        var mensaje = "Hola Mundo";
+        var porcion = mensaje.substring(-2); // porcion = "Hola Mundo"
+        alert("Desde la poscion -2 "+porcion);
+
+        var mensaje = "Hola Mundo";
+        var porcion = mensaje.substring(1, 8); // porcion = "ola Mun"
+        alert("Desde la poscion 1 a 8 "+porcion);
+        porcion = mensaje.substring(3, 4); // porcion = "a“
+        alert("Desde la poscion 3 a 4 "+porcion);
+
+        //valor más pequeño al inicio y el más grande al final:
+        var mensaje = "Hola Mundo";
+        var porcion = mensaje.substring(5, 0); // porcion = "Hola "
+        alert("Desde la poscion 5 a 0 "+porcion);
+        porcion = mensaje.substring(0, 5); // porcion = "Hola "
+        alert("Desde la poscion 0 a 5 "+porcion);
+    </script>   
+</head>
+<body>
+    <header><h1>Ejemplo de Javascript con substring</h1></header>
+    <p>Un párrafo de texto.</p>
+    <br><br><br>
+    <a href="../UNIDAD 3.html">Regresar al índice de actividades</a>
+    <br>
+    <a href="../portafolio.html">Regresar al menu principal</a>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>
