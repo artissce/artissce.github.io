@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 1</title>
+    <script type="text/javascript">
+		function separarcad(){
+			var text = "";
+			var mensaje = prompt("Introduce una Cadena de caracteres");
+			var palabras = mensaje.split(" ");
+			var letras = mensaje.split("")
+			var j;
+			for(let i=0; i<palabras.length; i++){
+				j=palabras.length;
+				palabras[i]=palabras[i][0].toUpperCase()+palabras[i].substr(1);
+			}
+			document.getElementById("texto").innerHTML=palabras;
+			document.getElementById("mensaje").innerHTML=mensaje;
+			document.getElementById("letras").innerHTML=j;
+		}
+	</script>
+</head>
+<body>
+	<h1>Separar palabras</h1>
+	<h2>Split</h2>
+	
+	<p>Click en el boton para ingresar una cadena de caracteres</p>
+	
+	<button onclick="separarcad()">Separar</button>
+	<p id="mensaje"></p>
+	<p id="texto"></p>
+	<p id="letras"></p>
+</body>
+</html>
