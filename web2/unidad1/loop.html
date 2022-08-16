@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function modifica_parrafo(){
+        var text = "";
+        var i;
+        for (i = 0; i < 5; i++) {
+            text += "The number is " + i + "<br>";//saltos de linea
+        }
+        document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Loops</h2>
+    <p id="demo" onclick="modifica_parrafo()"> click</p>
+</body>
+<footer> 
+    <hr>
+    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+</footer>
+</html>
