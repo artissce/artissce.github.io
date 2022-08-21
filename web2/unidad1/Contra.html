@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Contraseña</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script>
+        function alertas(){
+            var contra="admin";
+            var usuario="admin";
+            if(document.form.contra.value==contra && document.form.usuario.value==usuario){
+                alert("Bienvenido");
+            }else{
+                alert("Ingrese el usuario o la contraseña correcta");
+            }
+        }
+    </script>
+</head>
+<body align="center">
+    <h1>Iniciar Sesión</h1>
+	<form name="form" action="iniciar sesion">
+		<p>Usuario: <input type="text" name="usuario"></p>
+        <p>Contraseña: <input type="password" name="contra"></p>
+        <br>
+        <input onclick="alertas()" type="button" value="INICIAR">
+	
+	</form>
+</body>
+</html>
