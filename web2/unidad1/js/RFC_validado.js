@@ -28,7 +28,7 @@ function R(){
 	var i=0;
 	for(i=0;i<3;i++)
                             //ENTERO
-		 dato7+=caracteres[Math.floor(Math.random()*caracteres.length)];//MANERA DE CREAR EL ALEAOTORIO
+	dato7+=caracteres[Math.floor(Math.random()*caracteres.length)];//MANERA DE CREAR EL ALEAOTORIO
 	//une el rfc
     texto=dato2+dato3+dato1+dato4+dato5+dato6+dato7;
 	//mayuscula

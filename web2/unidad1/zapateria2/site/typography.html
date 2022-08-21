@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>Todo acerca del zapato</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container"><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <div class="page"><a class="section section-banner d-none d-xl-block"
+      href="https://www.templatemonster.com/intense-multipurpose-html-template.html"
+      style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img
+        src="images/banner/foreground-04-1600x60.png"
+        srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt=""
+        width="1600" height="310"></a>
+    <!-- Page Header-->
+    <header class="section page-header">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap rd-navbar-modern-wrap">
+        <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="70px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo.png" alt=""
+                      width="196" height="47" /></a></div>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Basket-->
+                  <div class="rd-navbar-basket-wrap">
+                    <button class="rd-navbar-basket fl-bigmug-line-shopping198"
+                      data-rd-navbar-toggle=".cart-inline"><span>2</span></button>
+                    <div class="cart-inline">
+                      <div class="cart-inline-header">
+                        <h5 class="cart-inline-title">En carrito:<span> 2</span> Productos</h5>
+                        <h6 class="cart-inline-title">Precio total:<span> $800</span></h6>
+                      </div>
+                      <div class="cart-inline-body">
+                        <div class="cart-inline-item">
+                          <div class="unit align-items-center">
+                            <div class="unit-left"><a class="cart-inline-figure" href="#"><img
+                                  src="images/product-mini-1-108x100.png" alt="" width="108" height="100" /></a></div>
+                            <div class="unit-body">
+                              <h6 class="cart-inline-name"><a href="#">Zapato Negro Hombre</a></h6>
+                              <div>
+                                <div class="group-xs group-inline-middle">
+                                  <div class="table-cart-stepper">
+                                    <input class="form-input" type="number" data-zeros="true" value="1" min="1"
+                                      max="1000">
+                                  </div>
+                                  <h6 class="cart-inline-title">$550</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-inline-item">
+                          <div class="unit align-items-center">
+                            <div class="unit-left"><a class="cart-inline-figure" href="#"><img
+                                  src="images/product-mini-2-108x100.png" alt="" width="108" height="100" /></a></div>
+                            <div class="unit-body">
+                              <h6 class="cart-inline-name"><a href="#">Tacones Rojos</a></h6>
+                              <div>
+                                <div class="group-xs group-inline-middle">
+                                  <div class="table-cart-stepper">
+                                    <input class="form-input" type="number" data-zeros="true" value="1" min="1"
+                                      max="1000">
+                                  </div>
+                                  <h6 class="cart-inline-title">$250</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-inline-footer">
+                        <div class="group-sm"><a class="button button-md button-default-outline-2 button-wapasha"
+                            href="#">Ir al carrito</a><a class="button button-md button-primary button-pipaluk"
+                            href="#">Checkout</a></div>
+                      </div>
+                    </div>
+                  </div><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping198"
+                    href="#"><span>2</span></a>
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search">
+                    <button class="rd-navbar-search-toggle"
+                      data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                    <form class="rd-search" action="#">
+                      <div class="form-wrap">
+                        <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input"
+                          type="text" name="search">
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">Nosotros</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Todo acerca del zapato</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Catalogo</a>
+                    </li>
+                    <!--PENDIENTE-->
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Distribuidores</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main"
+                  data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                  <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span
+                      class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span>
+                  </div>
+                  <div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span
+                      class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
+                  </div>
+                  <div class="project-close"><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="rd-navbar-project rd-navbar-modern-project">
+                <div class="rd-navbar-project-modern-header">
+                  <h4 class="rd-navbar-project-modern-title">Get in Touch</h4>
+                  <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main"
+                    data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                    <div class="project-close"><span></span><span></span></div>
+                  </div>
+                </div>
+                <div class="rd-navbar-project-content rd-navbar-modern-project-content">
+                  <div>
+                    <p>Calzado para mujer</p>
+                    <div class="heading-6 subtitle">Nuestros contactos</div>
+                    <div class="row row-10 gutters-10">
+                      <div class="col-12"><img src="images/home-sidebar-394x255.jpg" alt="" width="394" height="255" />
+                      </div>
+                    </div>
+                    <ul class="rd-navbar-modern-contacts">
+                      <li>
+                        <div class="unit unit-spacing-sm">
+                          <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit unit-spacing-sm">
+                          <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                          <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles,
+                              CA 90027</a></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit unit-spacing-sm">
+                          <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                          <div class="unit-body"><a class="link-email" href="mailto:#">mail@demolink.org</a></div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="list-inline rd-navbar-modern-list-social">
+                      <li><a class="icon fa fa-facebook" href="#"></a></li>
+                      <li><a class="icon fa fa-twitter" href="#"></a></li>
+                      <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                      <li><a class="icon fa fa-instagram" href="#"></a></li>
+                      <li><a class="icon fa fa-pinterest" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs-custom-inset">
+      <div class="breadcrumbs-custom context-dark bg-overlay-33">
+        <div class="container">
+          <h2 class="breadcrumbs-custom-title">Todo acerca del zapato</h2>
+          <ul class="breadcrumbs-custom-path">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Todo acerca del zapato</li>
+          </ul>
+        </div>
+        <div class="box-position" style="background-image: url(images/zapa_4.jpg);"></div>
+      </div>
+    </section>
+    <!-- Base typography-->
+    <section class="section section-sm section-first bg-default text-left">
+      <div class="container">
+        <div class="row row-40 flex-lg-row-reverse justify-content-xl-between">
+          <div class="col-xl-5 d-none d-xl-block">
+            <div class="offset-left-xl-45">
+              <h3>Mundo del zapato </h3>
+              <h3>Medidas y el pie</h3>
+              <h3>El buen zapato</h3>
+              <h3>Hormas</h3>
+              <h3>Numeración del zapato</h3>
+              <h3>Cuidado del zapato</h3>
+              <h3>Cómo se hace un zapato</h3>
+            </div>
+          </div>
+          <div class="col-xl-7">
+            <ul class="list-xl box-typography">
+              <li>
+                <h2>Mundo del zapato</h2>
+                <p>Unos zapatos siempre serán buenos si están hechos de la mejor piel y con una buena parte de trabajo
+                  artesanal. Estos criterios son válidos para todos los zapatos, para mocasines y modelos de cerquillo
+                  cosido. Los modelos de cerquillo ofrecen el máximo de comodidad y resistencia. Más adelante nos
+                  ocuparemos de cómo deben ser confeccionados unos buenos zapatos. En primer lugar debemos aclarar cómo
+                  podemos reconocerlos y cuáles son las características que nos ayudan a distinguirlos. De hecho, no
+                  resulta tan sencillo diferenciar a primera vista un zapato de calidad de uno mediocre, a menos que
+                  muchos años de experiencia hayan dotado al comprador de un sentido especial para ello. Sin embargo,
+                  incluso de esta manera resulta difícil reconocer qué aspecto tendrá la piel después de uno, dos o diez
+                  años, cómo estará confeccionado el interior del zapato y con qué procedimientos se habrá elaborado.
+                  Por este motivo, es muy recomendable guiarse al principio por dos criterios: el precio y la marca.</p>
+              </li>
+              <li>
+                <h2>Medidas y el pie</h2>
+                <p>
+                <h3>EL CONTORNO DEL PIE</h3>
+                En zapatería existe una regla de oro para la confección del calzado: cuanto más sencillo es el
+                instrumento de medición, más fiables son sus resultados. Incluso en los talleres más exigentes bastan
+                dos tacones, dos hojas de papel, una cinta métrica para zapateros, un cartabón y un lápiz, además de un
+                instrumento para medir la longitud del pie y de los utensilios necesarios para obtener una impresión de
+                la planta del pie (papel de copiado o pedígrafo).
+                Para determinar la longitud del pie y anchura de los zapatos a confeccionar se requiere el esquema del
+                contorno del pie. Lápiz y papel deben permanecer en un ángulo de 90º. Si el ángulo fuera menos o el
+                zapatero "dibujase por debajo", tal como se dice popularmente, el resultado obtenido sería un zapato un
+                número menor de lo planeado. El zapatero traza la línea a partir del talón, pasando por la parte
+                interior y hasta el pulgar. Luego sigue por la parte exterior y vuelve al talón. Durante el proceso se
+                presionan los dedos para que alcancen toda su longitud. Puesto que el pie derecho y el izquierdo nunca
+                son del todo idénticos, debe sacarse el contorno de cada pie.
+                Una vez completado el dibujo del contorno, el zapatero marca la situación de la primera y la quinta
+                falange de los metatarsianos, los puntos más prominentes de los laterales exterior e interior, así como
+                el talón, para preparar la medición de la punta del pie y de la anchura del talón.
+                <h3>LONGITUD Y ANCHURA DEL PIE</h3>
+                A partir del contorno del pie pueden medirse la longitud y la anchura del pie, con ayuda de la cinta
+                métrica de zapatero. esta consiste en una cinta textil indeformable con distintas medidas a cada lado.
+                En una cara, se encuentra la escala de puntos, con la cual puede medirse la longitud del pie.
+                Tradicionalmente muestra la numeración francesa o puntos parís, en la que una unidad representa 2/3 de
+                centímetro: 6,667 mm. El zapatero añade un número y medio al resultado de la medición. Así pues, si las
+                mediciones se corresponden con el número 41, los zapatos deben confeccionarse con el número 42,5, puesto
+                que al caminar es pie se extiende casi 1,5 cm. Evidentemente, es importante para la comodidad que el pie
+                no se encuentre limitado por delante al andar. Además, debería tener suficiente espacio para moverse en
+                el interior del zapato.
+                En la otra cara de la cinta métrica se encuentran las divisiones más pequeñas correspondientes al
+                sistema métrico (centímetros y milímetros). Con dichas unidades se mide el punto más ancho del pie, es
+                decir, la distancia entre los laterales interior y exterior. Ello se hace partiendo de los puntos
+                marcados en el dibujo del contorno del pie.
+                Finalmente, se comprueban las medidas con el instrumento de medición, sobre cuya superficie figuran las
+                escalas para medir la longitud y el ancho del pie. Después de colocar el pie sobre el aparato y
+                desplazar el talón contra el apoyo correspondiente, el zapatero mide la longitud del pie con la escala.
+                Gracias a unos pasadores laterales (uno se desplaza horizontalmente sobre unos rieles y el otro
+                verticalmente) se determina la anchura del piel
+
+
+                Con la ayuda de un instrumento de medición se controla la numeración de la longitud y de la anchura. El
+                instrumento de la fotografía muestra la escala inglesa.
+
+
+                El pie debe situarse sobre el instrumento de medición con el talón apoyado en su extremo. Además, deben
+                presionarse los dedos contra el suelo para tomar las medidas correctas.
+                La cinta métrica del zapatero muestra dos escalas: una mide la longitud de pie en puntos París (una
+                unidad son 6,66mm) y la otra la anchura y el volumen del pie con el sistema métrico, es decir, en
+                centímetros y milímetros.
+                <h3>EL VOLUMEN DEL PIE</h3>
+                Para medir el volumen se utiliza el lado de la cinta que muestra el sistema métrico. para la medición
+                del ancho de los metatarsianos, el zapatero coloca la cinta en los puntos donde el lateral exterior y el
+                interior sobresalen más. para ello coloca la cinta de forma algo oblicua por debajo de la planta. Unos 5
+                o 6 cm. más arriba, en dirección hacia el tobillo, mide el contorno del empeine. Seguidamente toma las
+                medidas del talón. Para ello coloca la cinta sobre el hueso del tobillo y rodea el talón. para la
+                confección de botas o botinas, el zapatero debe medir también el contorno del tobillo colocando la cinta
+                alrededor de la pierna por debajo del maléolo.
+
+                </p>
+              </li>
+              <li>
+                <h2>El buen zapato</h2>
+                <p>Siempre se ha dicho que los zapatos son la prenda más importante en el atuendo de un hombre. Y es
+                  realmente cierto.
+                  Una vestimenta perfecta en todos los detalles se verá irremisiblemente arruinada si está acompañada
+                  por unos zapatos de mala calidad. Sería mejor ir por la vida descalzo o en calcetines y disculparse
+                  aduciendo motivos religiosos, o argüir el robo del calzado, antes de pasearse con unos zapatos baratos
+                  y perder toda respetabilidad. De todas maneras, unos buenos zapatos deben ir siempre acompañados de un
+                  buen atuendo, puesto que ni siquiera el mejor calzado del mundo podrían compensar un vestuario más
+                  bien pobre.
+                  Aunque todo esto pueda parecer un poco exagerado, demuestra en cierto modo la importancia de los
+                  zapatos. Si usted no tiene la suerte de poder escoger lo mejor en cada detalle de su vestuario,
+                  debería entonces repartir su presupuesto de tal manera que la mayor parte de este vaya destinada a
+                  comprar unos zapatos de buena calidad. Todavía mejor si invirtiera todo su dinero destinado para ropa
+                  en calzado, puesto que como mínimo necesitará dos pares; después de llevarlos, los zapatos deben
+                  dejarse reposar como mínimo un día entero.
+                  Volvamos al tema del presupuesto personal. Si para usted resulta importante ir bien vestido y de
+                  manera elegante, debe prever que hay que dedicar una parte considerable de sus ingresos y de su tiempo
+                  llibre a este fin. El buen estilo no es algo que caiga del cielo y son pocos los que crecen en un
+                  ambiente en el que el sentido del gusto les sea inculcado de manera natural. La mayoría de nosotros no
+                  llevábamos cuando éramos jóvenes lo mejor y más caro, de manera que al alcanzar la edad adulta
+                  teníamos un armario lleno de trajes y camisas a medida, las mejores corbatas y sobre todo, los mejores
+                  zapatos. Si usted tiene una serie de compras que realizar, y le interesa ahorrar un poco, debería
+                  trazarse un plan de acción y situar los zapatos en primer lugar. En muchas ocasiones, pueden pasar
+                  desapercibidos unos vaqueros, camisas y suéters de segunda clase si en los pies se calzan unos zapatos
+                  como Dios manda.
+                </p>
+              </li>
+              <li>
+                <h2>Hormas</h2>
+                <p>
+                <h3>¿PARA QUÉ SIRVEN LAS HORMAS?</h3>
+                La horma es una copia abstracta en madera del pie humano. Una de sus funciones es sustituir el pie
+                durante la confección del zapato para actuar como superficie de trabajo en la que los fragmentos de piel
+                lisos puedan adquirir forma plástica.
+                La segunda función consiste en reflejar la orientación de la moda y los requisitos estéticos; es decir,
+                mostrar una forma perfecta, como el modelo de zapato elegido Durante los últimos cien años, la moda del
+                calzado masculino no ha sufrido variaciones extremas. Existen unos pocos modelos básicos que se
+                diferencian entre sí por la forma de la puntera, en el corte de la parte superior y en los elementos
+                ornamentales. Por ello se han desarrollado modelos de hormas bautizados con el nombre de los modelos
+                característicos, como por ejemplo, la horma Budapest, con puntera alta.
+                Las hormas correspondientes al volumen interior y la forma exterior del zapato se elaboran de acuerdo
+                con las medidas que se han tomado del pie, y siempre por pares. El pie derecho nunca es el reflejo
+                perfecto del izquierdo, se dan pequeñas o grandes diferencias en cuanto al tamaño y a la forma. Un buen
+                hormero tiene en cuenta las más leves diferencias especificadas en la hoja de medición y las traslada al
+                zapato.
+                Actualmente apenas quedan hormeros que sigan trabajando de una forma totalmente artesana y que ignoren
+                las ventajas del trabajo mecánico para aliviar su fatigoso trabajo aunque sea ocasionalmente.
+                Presentaremos los cuidadosos procedimientos de la elaboración de una horma desde un singular taller
+                donde siguen utilizándose únicamente herramientas tradicionales y que gracias a un trabajo muy
+                escrupuloso consigue hormas perfectas, sin las cuales las obras maestras que constituyen los zapatos a
+                medida no podrían existir.
+
+
+                <h3>HORMAS A MEDIDA</h3>
+                <h4>MÉTODO DE SUSTRACCIÓN</h4>
+                De una horma básica pueden elaborarse hormas a medida a partir de dos métodos característicos. Uno da
+                forma individual a la horma utilizando la sustracción; el otro, la adición Cuando llegan al taller del
+                zapatero, las hormas básicas son siempre algo más grandes de los necesario. Si el pie es más estrecho o
+                el empeine más bajo de la media, el zapatero, basándose en la hoja de medición y utilizando una lima o
+                papel de lija de distintos grosores, da la forma final correspondiente a los zapatos deseados y elabora
+                la horma a medida. Es decir, sustrae material.
+                Para finalizar, la horma se pule con papel de lija no muy grueso para evitar que la piel resbale sobre
+                la superficie durante la confección del zapato.
+
+                En primer lugar, el hormero lima la madera sobrante con una escofina gruesa.
+                A continuación usa una escofina más fina.
+                Se trata del método de sustracción.
+                <h4>MÉTODO DE ADICIÓN</h4>
+                Este método de confección de hormas a medida se remonta a las tradiciones más antiguas. La corrección
+                también se realiza según la hoja de mediciones, teniendo en cuenta los puntos críticos. Los lugares
+                característicos donde el hormero debe aplicar las correcciones son, normalmente, el contorno exterior de
+                la planta, la zona de los metatarsianos, el dedo pulgar, el empeine y el talón. En muy pocos casos
+                dichos puntos son más pequeños de lo normal. Es más frecuente que el pie sea más ancho, el empeine y el
+                pulgar más elevados o el talón más desarrollado. Mediante la adición de varias capas de pie de distintos
+                grosores, se da la forma deseada a la horma. Si las medidas difieren mucho de la media, puede aplicarse
+                más de una capa de piel
+                Se comprueba la longitud según los datos de la hoja de medición. Deben rebajarse los bordes de las capas
+                de piel.
+
+                <h3>HORMAS CORREGIDAS</h3>
+                Confeccionar un par de zapatos sobre una horma corregida mediante el método de adición no supone ningún
+                problema para un zapatero. La forma deseada se consigue pegando fragmentos de piel a la horma. No
+                obstante, esos trozos de piel pueden despegarse o deformarse durante la confección. Por tanto, si el
+                cliente desea utilizar la horma para varios pares de zapatos, resulta más seguro usarla como patrón para
+                una horma a medida definitiva.
+                Las hormas izquierda y derecha corregidas mediante capas de piel se envían de nuevo al taller del
+                hormero, donde se utilizan como patrón para la elaboración de hormas a medida. Bajo las muelas se coloca
+                una horma algo más grande. El copiado definitivo permite obtener en unos minutos la horma adecuada al
+                modelo de zapato elegido.
+
+                Los añadidos se pegan en su lugar correspondiente.
+
+                Se realizan frecuentes mediciones para comprobar el volumen.
+
+                Las hormas corregidas con piel son utilizadas como patrones para las hormas a medida definitivas, que
+                actuarán como sustituto del pie del cliente y de todos sus rasgos característicos.
+                </p>
+              </li>
+              <li>
+                <h2>Numeración del zapato</h2>
+                <p>
+                <h3>LA NUMERACION FRANCESA</h3>
+                Durante la época de Napoleón (principios del siglo XIX), en Europa se extendió el uso del punto París,
+                equivalente a 2/3 cm., es decir 6,667 mm. Puesto que esta medida no tardó en resultar demasiado grande,
+                cada país introdujo medias medidas: el número 40,5 equivale aproximadamente a 27 cm
+                <h3>LA NUMERACION INGLESA</h3>
+                El sistema inglés quedó fijado por orden del rey de Inglaterra Eduardo II. Este determinó que tres
+                granos de cebada juntos formaban una pulgada (1 pulgada=2,54 cm) y que 12 pulgadas eran un pie (1
+                pie=30,48 cm.) La unidad de calzado inglés (size) equivalente a la longitud de un grano de cebada, es
+                decir 1/3 de pulgada o 0,846 cm. También en este caso la unidad resultó ser demasiado grande, por lo que
+                se introdujeron números medios: 1/2 size = 0,423 cm.
+                El sistema de numeración inglés empieza con un longitud para adultos de unos 22 cm. (size 1, equivalente
+                a la 33 francesa). A estos 22 cm. o 8,66 pulgadas se le añada 1/3 de pulgada por número. El número 42
+                francés se corresponde al número 28 de las tallas métricas y al 8 de la numeración inglesa (22 cm. +
+                (8x0,846) =28,77 cm). La numeración más corriente entre caballeros oscila entre el número 5,5 (número 39
+                en el sistema francés) y el 11 (número 46 en el sistema francés).
+                <h3>LA NUMERACION AMERICANA</h3>
+                Se trata básicamente de la unidad inglesa size. La diferencia radica en el punto de partida. En el
+                sistema americano, la escala empieza 1,116 mm. antes, lo cual significa que en comparación con el
+                sistema inglés, cada número empieza un poco antes.
+                <h3>LA NUMERACION METRICA</h3>
+                La numeración métrica permite medir tanto la longitud del pie como de un zapato y cuenta con una escala
+                similar. En la práctica no se ha impuesto para la numeración del calzado.
+
+                </p>
+              </li>
+              <li>
+                <h2>Cuidado del zapato</h2>
+                <p>Al traspasarle los zapatos, el zapatero inicia al cliente en los secretos del cuidado de los zapatos en forma ceremonial. Es como si entregase una obra de arte única a su comprador. La vida y el atractivo aspecto del nuevo zapato dependen de la calidad del material utilizado y de la técnica del zapatero, y también, en gran parte, del cuidado que recibe por parte de su propietario. Durante una breve prueba y tras andar unos pocos minutos, el cliente es capaz de determinar si los zapatos se adaptan bien al pie. Pero para preservar las cualidades del calzado durante largo tiempo, es recomendable seguir algunas reglas:	
+                  1.	Al principio, el cliente sólo puede calzarse los zapatos nuevos durante un máximo de dos a tres horas. Sólo cuando el pie se ha "acostumbrado" completamente al zapato puede empezar a llevarlos todo el día. 
+                  2.	No debe usar el mismo par de zapatos durante dos días seguidos, sino que debe dejarlos reposar un mínimo de 24 horas. 
+                  3.	Para calzárselos debe usar siempre un calzador, tanto si se trata de zapatos con cordones, de zapatos con hebilla o de mocasines. 
+                  4.	Antes de descalzarse debe aflojar los cordones en todos los agujeros, para que el pie pueda salir del zapato fácilmente, sin esfuerzos. 
+                  5.	Inmediatamente después de descalzarse, debe introducir la horma extendedora en su interior. 
+                  6.	Aunque el zapato se haya mojado a causa de la nieve o de la lluvia, debe introducir inmediatamente las hormas extendedoras en su interior. A continuación debe colocarlos de lado y dejar que se sequen durante un día entero. 
+                  7.	Es recomendable que cepille los zapatos después de cada uso, aunque en apariencia no haya disminuido su brillo anterior. 
+                  8.	Si durante un tiempo no usa los zapatos, debe aplicarles una fina capa de betún y conservarlos en la bolsa que recibió del zapatero, de pie y en el interior de una caja de cartón. 
+                  9.	El propietario de un zapato hecho a medida no debería prestar nunca sus zapatos, ya que no existen dos pies iguales. 
+                  10.	Todo zapato nuevo tiene su carácter especial. Su verdadera belleza se aprecia realmente cuando se lleva con traje y en la ocasión adecuada. 
+                  
+                  </p>
+              </li>
+              <li>
+                <h2>Cómo se hace un zapato?</h2>
+                <p>
+                  La horma de un zapato de fabricación industrial sólo puede elaborarse a partir de unos valores medios que suelen dar muy buenos resultado. Por ejemplo, en Church's existen hasta seis anchuras distintas para cada modelo. La mayorís de los hombres encuentran lo que necesitan.	En los zapatos de fabricación industrial las plantillas se cortan a la medida adecuada con ayuda de una máquina para minimizar la pérdida del material. Los zapateros a medida cortan las suelas una a una.
+ 
+ 
+
+Después de que la plantilla haya sido fijada a la horma se pega una fina cinta de piel, la pestaña del hendido. A ella se coserá más tarde el cerquillo y la pala. Por eso, el zapato de cerquillo cosido es estable y flexible.	La pestaña del hendido puede igualmente elaborarse a partir de la plantilla. Así proceden también los zapateros a medida, pero estos trabajan normalmente sin máquinas y separan la pestaña del hendido de la plantilla.
+ 
+ 
+
+Dos plantillas con pestañas del hendido grabadas y dobladas hacia arriba. En Church's se puede optar en la fabricación industrial por esta alternativa de pestaña del hendido pegada.	Mientras se preparan las plantillas y las pestañas del hendido los cortadores cortan las partes de la pala. para ello es necesario los patrones para cada una de las partes de ésta.
+ 
+ 
+
+Los closers cosen las partes de la pala, con pespuntes y tachones, en parte a mano, y unen la pala con el forro. En los zapatos de calidad el forro es de piel de cabra o tela.	La pala dispuesta sobre la horma se fija provisionalmente y se cose a la pestaña del hendido y al cerquillo. Este es el paso decisivo en el arte de la confección a medida de estos zapatos. Lo maravilloso es que una sola costura une la pala, la pestaña del hendido y el cerquillo.
+ 
+ 
+
+La costura que pasa por la pala, la pestaña del hendido y el cerquillo se entabla en el talón. De manera que bajo el talón no se cose la suela en el cerquillo, sino que se sujeta con clavos desde dentro a través de la plantilla junto al tacón.	Puesto que el cerquillo, tal como indica su nombre, circunda la plantilla, queda un vacío cuando se coloca la suela exterior. Este espacio hueco se rellena con una masa compuesta de corcho y resina en la que el pie encuentra un lecho perfecto sobre el que descansar.
+ 
+ 
+
+La suela exterior se cose al cerquillo mediante una máquina. La costura que se puede ver bajo la suela es la misma costura que une la suela y el cerquillo, pero no hay que temer que la suela se desprenda si la costura se deshace.	El tacón de un zapato de cerquillo cosido se compone de cuatro a cinco capas de piel colocadas una encima de la otra según la altura del tacón. Entre la última y la penúltima capa de piel se coloca una capa de goma puesto que es el lugar donde el tacón se desgasta más.
+
+
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html"
+      style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )"><img
+        src="images/banner/foreground-03-1600x310.png"
+        srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt=""
+        width="1600" height="310"></a>
+    <!-- Page Footer-->
+    <footer class="section footer-variant-2 footer-modern context-dark section-top-image section-top-image-dark">
+      <div class="footer-variant-2-content">
+        <div class="container">
+          <div class="row row-40 justify-content-between">
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="oh-desktop">
+                <div class="wow slideInRight" data-wow-delay="0s">
+                  <div class="footer-brand"><a href="index.html"><img src="images/logo.png" alt="" width="196"
+                        height="42" /></a></div>
+                  <p>Zapateria Bicentenario esta enfocado en ofrecer el mejor calzado para la poblacion</p>
+                  <ul class="footer-contacts d-inline-block d-md-block">
+                    <li>
+                      <div class="unit unit-spacing-xs">
+                        <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="unit unit-spacing-xs">
+                        <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
+                        <div class="unit-body">
+                          <p>Mon-Sat: 07:00AM - 05:00PM</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="unit unit-spacing-xs">
+                        <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                        <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles,
+                            CA 90027</a></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-4">
+              <div class="oh-desktop">
+                <div class="inset-top-18 wow slideInDown" data-wow-delay="0s">
+                  <h5>Quieres mas informes?</h5>
+                  <p>Unete a nuestro catalogo para mas informes</p>
+                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="subscribe"
+                    method="post" action="bat/rd-mailform.php">
+                    <div class="form-wrap">
+                      <input class="form-input" id="subscribe-form-5-email" type="email" name="email"
+                        data-constraints="@Email @Required">
+                      <label class="form-label" for="subscribe-form-5-email">Ingresa tu E-mail</label>
+                    </div>
+                    <button class="button button-block button-white" type="submit">Suscribete</button>
+                  </form>
+                  <div class="group-lg group-middle">
+                    <p class="text-white">Siguenos</p>
+                    <div>
+                      <ul class="list-inline list-inline-sm footer-social-list-2">
+                        <li><a class="icon fa fa-facebook" href="#"></a></li>
+                        <li><a class="icon fa fa-twitter" href="#"></a></li>
+                        <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                        <li><a class="icon fa fa-instagram" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-3">
+              <div class="oh-desktop">
+                <div class="inset-top-18 wow slideInLeft" data-wow-delay="0s">
+                  <h5>Gallery</h5>
+                  <div class="row row-10 gutters-10" data-lightgallery="group">
+                    <div class="col-6 col-sm-3 col-lg-6">
+                      <!-- Thumbnail Classic-->
+                      <article class="thumbnail thumbnail-mary">
+                        <div class="thumbnail-mary-figure"><img src="images/z_2.jpg" alt="" width="129" height="120" />
+                        </div>
+                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
+                            href="images/gallery-original-7-800x1200.jpg" data-lightgallery="item"><img
+                              src="images/gallery-image-1-129x120.jpg" alt="" width="129" height="120" /></a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-6">
+                      <!-- Thumbnail Classic-->
+                      <article class="thumbnail thumbnail-mary">
+                        <div class="thumbnail-mary-figure"><img src="images/z_3.jpg" alt="" width="129" height="120" />
+                        </div>
+                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
+                            href="images/gallery-original-8-1200x800.jpg" data-lightgallery="item"><img
+                              src="images/gallery-image-2-129x120.jpg" alt="" width="129" height="120" /></a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-6">
+                      <!-- Thumbnail Classic-->
+                      <article class="thumbnail thumbnail-mary">
+                        <div class="thumbnail-mary-figure"><img src="images/z_4.jfif" alt="" width="129" height="120" />
+                        </div>
+                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
+                            href="images/gallery-original-9-800x1200.jpg" data-lightgallery="item"><img
+                              src="images/gallery-image-3-129x120.jpg" alt="" width="129" height="120" /></a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-6">
+                      <!-- Thumbnail Classic-->
+                      <article class="thumbnail thumbnail-mary">
+                        <div class="thumbnail-mary-figure"><img src="images/z_5.jpg" alt="" width="129" height="120" />
+                        </div>
+                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
+                            href="images/gallery-original-10-1200x800.jpg" data-lightgallery="item"><img
+                              src="images/gallery-image-4-129x120.jpg" alt="" width="129" height="120" /></a>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-variant-2-bottom-panel">
+        <div class="container">
+          <!-- Rights-->
+          <div class="group-sm group-sm-justify">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Zapateria
+                Bicentenario</span>. Todos los derechos
+            </p>
+            <p class="rights">Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com/">Templatemonster</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
