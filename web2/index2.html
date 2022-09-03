@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/catlogo.png" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio Web 2</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/artis/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobreMateria" onclick="seleccionar(this)">Sobre la materia</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Unidad 1</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Unidad 2</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Unidad 3</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Ana</span>, disfruta!</h2>
+                <p class="descripcion">Estudiantes de ITI </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobreMateria">
+        <div class="sobreMateria">
+            <p class="titulo-seccion">Sobre la materia</p>
+            <h2>Materia <span>Programacion Web 2</span> </h2>
+            <h3>Maestra: Roxana Herrera</h3>
+            <p>Base de datos, php y mas
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="presentaciones">
+        <h3 class="titulo-seccion">Presentaciones</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Unidad 1</h4>
+                <hr>
+                <ul class="servicios-tag">
+                  <li>vada</li>  
+                  <li>bassa</li>
+                  <li>aasd</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Unidad 2</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Unidad 3</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asas</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022 <br>Ana Karen Cuenca Esquivel - 177932</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
