@@ -296,6 +296,254 @@ html {
     font-size: 14px;
     line-height: 22px;
 }
+/*UNIDAD 2*/
+#presentaciones2 {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#presentaciones2 .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#presentaciones2 .fila {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 30px auto;
+    
+}
+
+#presentaciones2 .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+
+#presentaciones2 .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#presentaciones2 .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+#presentaciones2 .fila .servicio h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color:#ff5080;
+}
+
+#presentaciones2 .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#presentaciones2 .fila .servicio li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+#presentaciones2 .fila .servicio a{
+    text-decoration: none; 
+    color: black;
+}
+#presentaciones2 .fila .servicio a:hover{
+    text-decoration: none; 
+    color: #ff5080;
+}
+
+#presentaciones2 .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+/*UNIDAD 3*/
+
+#presentaciones3 {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#presentaciones3 .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#presentaciones3 .fila {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 30px auto;
+    
+}
+
+#presentaciones3 .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+
+#presentaciones3 .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#presentaciones3 .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+#presentaciones3 .fila .servicio h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color:#ff5080;
+}
+
+#presentaciones3 .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#presentaciones3 .fila .servicio li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+#presentaciones3 .fila .servicio a{
+    text-decoration: none; 
+    color: black;
+}
+#presentaciones3 .fila .servicio a:hover{
+    text-decoration: none; 
+    color: #ff5080;
+}
+
+#presentaciones3 .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*Proyecto*/
+#proyecto {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#proyecto .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#proyecto .fila {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 30px auto;
+    
+}
+
+#proyecto .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+
+#proyecto .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#proyecto .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+#proyecto .fila .servicio h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color:#ff5080;
+}
+
+#proyecto .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#proyecto .fila .servicio li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+#proyecto .fila .servicio a{
+    text-decoration: none; 
+    color: black;
+}
+#proyecto .fila .servicio a:hover{
+    text-decoration: none; 
+    color: #ff5080;
+}
+
+#proyecto .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
 /* *********************/
 /* seccion S K I L L S */
 /* *********************/
