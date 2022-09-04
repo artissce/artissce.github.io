@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ejercicio 1</title>
+    <!--ejercicio completo hecho en clase con apoyo de un compañero
+    <script>
+        //ejercicio completo hecho en clase con apoyo de un compañero
+        let cadena = prompt("Ingrese el texto que desee: ");
+        let palabras = cadena.split(" ");
+        var i;
+        for (i = 0; i < palabras.length; i++){
+            var letra1 = palabras[i].charAt(0).toUpperCase();
+            var tam = palabras[i].length;
+            var letra2 = palabras[i].charAt(tam - 1).toUpperCase();
+            palabras[i] = letra1 + palabras[i].substring(1, tam-1) + letra2;
+        }
+        alert(palabras);
+        //ejercicio completo hecho en clase por la maestra
+    </script>
+    -->
+    <!--//ejercicio completo hecho en clase por la maestra-->
+    <script>     
+        let cadena = prompt("Ingrese el texto que desee: ");
+        let palabras = cadena.split(" ");
+        var pal = "";
+        var i=0, tam=0;
+        for (i = 0; i < palabras.length; i++){
+            pal = palabras[i].split(""); //separamos las palabras en letras
+            tam = pal.length; //guardamos la cantidad de letras en una variable llamada tam
+            pal[0] = pal[0].toUpperCase(); //Convertimos la primera letra de la palabra en mayúscula
+            pal[tam-1] = pal[tam-1].toUpperCase(); //convertimos la ultima letra en mayúscula
+            palabras[i] = pal.join(""); //juntamos las letras para formar las palabras
+        }
+        alert(palabras);
+    </script>
+</head>
+
+<body>
+    <h2>javascript loops</h2>
+</body>
+</html>

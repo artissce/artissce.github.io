@@ -265,6 +265,11 @@ html {
     font-size: 22px;
     margin-bottom: 25px;
 }
+#presentaciones .fila .servicio h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color:#ff5080;
+}
 
 #presentaciones .fila .servicio hr {
     width: 30%;
@@ -273,11 +278,19 @@ html {
     margin-bottom: 25px;
 }
 
-#presentaciones .fila .servicio ul {
+#presentaciones .fila .servicio li {
     list-style: none;
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
+}
+#presentaciones .fila .servicio a{
+    text-decoration: none; 
+    color: black;
+}
+#presentaciones .fila .servicio a:hover{
+    text-decoration: none; 
+    color: #ff5080;
 }
 
 #presentaciones .fila .servicio p {
