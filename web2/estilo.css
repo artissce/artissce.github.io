@@ -233,9 +233,10 @@ html {
 
 #presentaciones .fila {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1150px;
     margin: 30px auto;
+    
 }
 
 #presentaciones .fila .servicio {
@@ -247,9 +248,7 @@ html {
     transition: .5s;
 }
 
-#presentaciones .fila .servicio:hover {
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-}
+
 
 #presentaciones .fila .servicio .icono {
     display: inline-block;
