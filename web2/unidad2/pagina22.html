@@ -1,26 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anagrama</title>
-</head>
-    <h1 align=center>Anagrama </h1>
+    <link rel="shortcut icon" href="img/logo.png">.
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <!-- CUSTOM STYLE -->      
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet"> 
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
 
-<body>
-<h1>Rellena los campos</h1>
-<form action="saludo3.php" method="post">
+  <body class="size-1140">
+  	<div id="page-wrapper">
+      <!-- HEADER -->
+      <header role="banner" class="position-absolute margin-top-30 margin-m-top-0 margin-s-top-0">    
+        <!-- Top Navigation -->
+        <nav class="background-transparent background-transparent-hightlight full-width sticky">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo">
+              <!-- Logo version before sticky nav -->
+              <img class="logo-before" src="img/logo.png" alt="">
+              <!-- Logo version after sticky nav -->
+              <img class="logo-after" src="img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="s-12 l-10">
+            <div class="top-nav right">
+              <p class="nav-text"></p>
+              <ul class="right chevron">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about-us.html">Anterior</a></li>             
+                <li><a href="contact.html">Siguiente</a></li>
+              </ul>
+            </div>
+          </div>  
+        </nav>
+      </header>
+      
+      <!-- MAIN -->
+      <main role="main">
+        <!-- Content -->
+        <article>
+          <header class="section-top-padding background-white">
+            <div class="line text-center">        
+              <h1 class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">Anagrama</h1>
+              <p class="margin-bottom-0 text-size-16 text-dark">Uso del php en formulario</p>
+            </div>  
+          </header>
+          <section class="section background-white">
+            <div class="s-12 m-12 l-4 center">
+              <h4 class="text-size-20 margin-bottom-20 text-dark text-center">Rellena los campos</h4>
+              <form name="contactForm" class="customform" action="saludo3.php" action="saludo3.php" method="post" >
+                <div class="s-12">
+                        Escribe palabras: 
+                        <input name="palabra1" class="name" placeholder="Primera palabra" title="Your name" type="text">
+                        <p class="name-error form-error">Porfavor, ingresa la palabra.</p>
+                        <input name="palabra2" class="name" placeholder="Primera palabra" title="Your name" type="text">
+                        <p class="name-error form-error">Porfavor, ingresa la palabra.</p>
+                    
+             </div>
+                <div class="s-12"><button class="s-12 submit-form button background-primary text-white" type="submit">Enviar</button></div>
+              </form>
+            </div>           
+          </section> 
 
-Escribe palabras: 
-<input type="text" name="palabra1">
-<input type="text" name="palabra2">
-<input type="submit">
-</form>
-</body>
+      
+      <!-- FOOTER -->
+      <footer>
+        <!-- Contact Us -->
+        <div class="background-dark padding text-center footer-social">
+          <a class="margin-right-10" target="_blank" href="https://www.facebook.com"><i class="icon-facebook_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">FACEBOOK</span></a>
+          <a class="margin-right-10" target="_blank" href="https://www.twitter.com"><i class="icon-twitter_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">TWITTER</span></a>
+          <a class="margin-right-10" target="_blank" href="https://www.instagram.com"><i class="icon-instagram_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">INSTAGRAM</span></a>
+          <a target="_blank" href="https://www.linkedin.com"><i class="icon-linked_in_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">LINKEDIN</span></a>                                                                         
+        </div>
 
-<footer> 
-    <hr>
-    <p style="text-align:center;">Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
-</footer>
+        <!-- Main Footer -->
+        
+        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 0, 0, 0.80);">
+        
+        <!-- Bottom Footer -->
+        <section class="padding background-dark full-width">
+          <div class="text-center">
+            <p class="text-size-12">Ana Karen Cuenca Esquivel - 177932<br></p>
+            <p class="text-size-12">UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="js/jquery.events.touch.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script> 
+  </body>
 </html>

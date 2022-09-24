@@ -15,11 +15,11 @@ sort($pal2);
 
 if ($pal1 == $pal2)
 {   
-    echo "$pal1 y  $pal2 son anagramas";
+    echo "$palabra1 y  $palalabra2 son anagramas";
 }
 else
 {
-    echo $pal1. "y". $pal2. " no son anagramas";
+    echo "$palabra1 y $palalabra2 no son anagramas";
 }
 
 ?>
