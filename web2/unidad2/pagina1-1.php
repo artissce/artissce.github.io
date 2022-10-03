@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Round</title>
+    <title>Hola Mundo y noticia</title>
     <link rel="shortcut icon" href="img/catlogo.png">.
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
@@ -37,8 +37,8 @@
               <p class="nav-text"></p>
               <ul class="right chevron">
                 <li><a href="https://artissce.github.io/web2/index2.html#presentaciones2">Inicio</a></li>          
-                <li><a href="./pagina4.php">Anterior</a></li>
-                <li><a href="./pagina5.php">Siguiente</a></li>
+                <li><a href="./pagina1.php">Anterior</a></li>
+                <li><a href="./pagina1-2.php">Siguiente</a></li>
               </ul>
             </div>
           </div>  
@@ -51,16 +51,17 @@
         <article>
           <header class="section-top-padding background-white">
             <div class="line text-center">        
-              <h1 class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">Round</h1>
+              <h1 class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">Hola mundo y noticia</h1>
+              <p class="margin-bottom-0 text-size-16 text-dark">texto en php</p>
             </div>  
           </header>
           <section class="section background-white">
             <div class="s-12 m-12 l-4 center">
             <?php
+    echo "<b>Hola Mundo \n<br></b>";
+    echo "<a href='https://www.msn.com/es-us/noticias/los%2520angeles/e2-80-98nunca-olvidaremos-e2-80-99-el-ataque-terrorista-del-11-de-septiembre-de-2001/ar-AA11IRO9'>noticia del 11 de septiembre</a>";
 
-echo round(15.249,2);
-
-?>
+    ?>
             </div>           
           </section> 
 
