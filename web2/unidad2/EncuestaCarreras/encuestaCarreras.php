@@ -67,78 +67,86 @@
 						<input type="checkbox" name="Carrera5" value="5">LAG<br>
 						<input type="checkbox" name="Carrera6" value="6">LMI<br>
 						<br>
-						<input class="s-12 submit-form button background-primary text-white" type="submit" value="Enviar" name="enviar">
+						
 					</div>
-				</form>
-                <div class="s-12"><button class="s-12 submit-form button background-primary text-white" type="submit">Enviar</button></div>
+                <div class="s-12"><button class="s-12 submit-form button background-primary text-white"value="Enviar" name="enviar" type="submit">Enviar</button></div>
               </form>
             </div>           
           </section> 
-		  <?php
-		    function leerDatos($nombreArchivo, &$carrera){
-		        $archivo = fopen($nombreArchivo, "r+");
-		        for ($i=0; $i<6 && !feof($archivo); $i++)
-		            fscanf($archivo, "%d\n", $carrera[$i]);
-		        fclose($archivo);
-		    }
+<?php
 
-		    function guardarDatos($nombreArchivo, &$carrera){
-		        $archivo = fopen($nombreArchivo, "w");
-		        for ($i=0; $i<6; $i++)
-		            fprintf($archivo, "%d\n", $carrera[$i]);
-		        fclose($archivo);
-		    }
+            function leerDatos($nombreArchivo, &$carrera){
 
-		    function grafica($datos){
-		        
-		    }
-		?>
+                $archivo = fopen($nombreArchivo, "r+");
 
-        <?php
-        	if(!empty($_POST['enviar'])){
-        		$datos = array(0, 0, 0, 0, 0, 0);
-        		leerDatos("encuesta.txt", $datos);
+                for ($i=0; $i<6 && !feof($archivo); $i++)
 
-        		for ($i=0;$i<6;$i++)
-        			if(isset($_POST['Carrera'.($i+1)]))
-        				$datos[$i]++;
+                    fscanf($archivo, "%d\n", $carrera[$i]);
 
-        		grafica($datos);
-        		guardarDatos("encuesta.txt", $datos);
-        	}
+                fclose($archivo);
+
+            }
+
+
+
+            function guardarDatos($nombreArchivo, &$carrera){
+
+                $archivo = fopen($nombreArchivo, "w");
+
+                for ($i=0; $i<6; $i++)
+
+                    fprintf($archivo, "%d\n", $carrera[$i]);
+
+                fclose($archivo);
+
+            }
+
+
+
+            function grafica($datos){
+
+                echo "<table><tr>";
+
+                for($i=0;$i<6;$i++){
+
+                    echo "<td style='vertical-align:bottom'> $datos[$i]
+
+                        <br><img src='azul.png' width='20px' height='".$datos[$i]*(10)."px'></td>";
+
+                }
+
+                echo "</tr><tr><th>ITI</th><th>ITEM</th><th>ISTI</th><th>ITMA</th><th>LAG</th><th>LMI</th></tr></table>";
+
+            }
+
+        ?>
+<?php
+ if(!empty($_POST['enviar'])){
+
+                $datos = array(0, 0, 0, 0, 0, 0);
+
+                leerDatos("encuesta.txt", $datos);
+
+
+
+                for ($i=0;$i<6;$i++)
+
+                    if(isset($_POST['Carrera'.($i+1)]))
+
+                        $datos[$i]++;
+
+
+
+                grafica($datos);
+
+                guardarDatos("encuesta.txt", $datos);
+
+            }
+
         ?>
 
-		<?php 
-		echo "<table>";
-		echo "<tr>";
-		echo "<td>". $datos[0] ."</td>";
-		echo "<td>". $datos[1] ."</td>";
-		echo "<td>". $datos[2] ."</td>";
-		echo "<td>". $datos[3] ."</td>";
-		echo "<td>". $datos[4] ."</td>";
-		echo "<td>". $datos[5] ."</td>";
-		echo "</tr>";
 
-		echo "<tr>";
-		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[0]px' > </td>";
-		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[1]px' > </td>";
-		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[2]px' > </td>";
-		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[3]px' > </td>";
-		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[4]px' > </td>";
-		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[5]px' > </td>";
-		echo "</tr>";
 
-		echo "<tr>";
-		echo "<th> ITI </th>";
-		echo "<th> ITEM </th>";
-		echo "<th> ISTI </th>";
-		echo "<th> ITMA </th>";
-		echo "<th> LAG </th>";
-		echo "<th> LMI </th>";
-		echo "</tr>";
-		echo "</table>";
-		?>
-      
       <!-- FOOTER -->
       <footer>
         <!-- Contact Us -->
