@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DATOS</title>
+    <title>Formulario de Carreras</title>
     <link rel="shortcut icon" href="../img/catlogo.png">.
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/icons.css">
@@ -51,49 +51,94 @@
         <article>
           <header class="section-top-padding background-white">
             <div class="line text-center">        
-              <h1 class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">Datos de alumno</h1>
-              <p class="margin-bottom-0 text-size-16 text-dark">formulario con php</p>
+              <h1 class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">Encuesta carreras</h1>
+              <p class="margin-bottom-0 text-size-16 text-dark">¿Que carrera te interesa estudiar?</p>
             </div>  
           </header>
           <section class="section background-white">
             <div class="s-12 m-12 l-4 center">
-			<?php
-			if(isset($_POST['enviar'])){
-				echo "<h2>Matricula escrita</h2>";
-				if(empty($_POST['matricula'])){
-					echo "No hay matricula </p>";
-				}else{
-					echo "<p>Matricula: ".$_POST['matricula']."</p>";
-				}
-
-				echo "<h2>Carrera seleccionada</h2>";
-				if(empty($_POST['carrera'])){
-					echo "No hay carrera </p>";
-				}else{
-					echo "<p>Carrera: ".$_POST['carrera']."</p>";
-				}
-
-
-				echo "<h2>Semestre seleccionado</h2>";
-				if(empty($_POST['semestre'])){
-					echo "No hay semestre </p>";
-				}else{
-					echo "<p>Semestre: ".$_POST['semestre']."</p>";
-				}
-				
-				echo "<h2>Materias seleccionadas</h2>";
-				if(isset($_POST['materia'])){
-					$materias=$_POST['materia'];  
-					for($i=0;$i<count($materias);$i++) 
-						echo "<p>".$materias[$i]."</p>";
-				}else{
-					echo "No hay materias";
-				}
-
-			}
-		?>
-			</div>           
+              <h4 class="text-size-20 margin-bottom-20 text-dark text-center">Rellena los campos</h4>
+              <form name="contactForm" class="customform" action="encuestaCarreras.php" method="post" >
+                    <div class="s-12">
+						<input type="checkbox" name="Carrera1" value="1">ITI<br>
+						<input type="checkbox" name="Carrera2" value="2">ITEM<br>
+						<input type="checkbox" name="Carrera3" value="3">ISTI<br>
+						<input type="checkbox" name="Carrera4" value="4">ITMA<br>
+						<input type="checkbox" name="Carrera5" value="5">LAG<br>
+						<input type="checkbox" name="Carrera6" value="6">LMI<br>
+						<br>
+						<input class="s-12 submit-form button background-primary text-white" type="submit" value="Enviar" name="enviar">
+					</div>
+				</form>
+                <div class="s-12"><button class="s-12 submit-form button background-primary text-white" type="submit">Enviar</button></div>
+              </form>
+            </div>           
           </section> 
+		  <?php
+		    function leerDatos($nombreArchivo, &$carrera){
+		        $archivo = fopen($nombreArchivo, "r+");
+		        for ($i=0; $i<6 && !feof($archivo); $i++)
+		            fscanf($archivo, "%d\n", $carrera[$i]);
+		        fclose($archivo);
+		    }
+
+		    function guardarDatos($nombreArchivo, &$carrera){
+		        $archivo = fopen($nombreArchivo, "w");
+		        for ($i=0; $i<6; $i++)
+		            fprintf($archivo, "%d\n", $carrera[$i]);
+		        fclose($archivo);
+		    }
+
+		    function grafica($datos){
+		        
+		    }
+		?>
+
+        <?php
+        	if(!empty($_POST['enviar'])){
+        		$datos = array(0, 0, 0, 0, 0, 0);
+        		leerDatos("encuesta.txt", $datos);
+
+        		for ($i=0;$i<6;$i++)
+        			if(isset($_POST['Carrera'.($i+1)]))
+        				$datos[$i]++;
+
+        		grafica($datos);
+        		guardarDatos("encuesta.txt", $datos);
+        	}
+        ?>
+
+		<?php 
+		echo "<table>";
+		echo "<tr>";
+		echo "<td>". $datos[0] ."</td>";
+		echo "<td>". $datos[1] ."</td>";
+		echo "<td>". $datos[2] ."</td>";
+		echo "<td>". $datos[3] ."</td>";
+		echo "<td>". $datos[4] ."</td>";
+		echo "<td>". $datos[5] ."</td>";
+		echo "</tr>";
+
+		echo "<tr>";
+		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[0]px' > </td>";
+		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[1]px' > </td>";
+		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[2]px' > </td>";
+		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[3]px' > </td>";
+		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[4]px' > </td>";
+		echo "<td valign='bottom'> <img src='azul.png' width='40px' height='$datos[5]px' > </td>";
+		echo "</tr>";
+
+		echo "<tr>";
+		echo "<th> ITI </th>";
+		echo "<th> ITEM </th>";
+		echo "<th> ISTI </th>";
+		echo "<th> ITMA </th>";
+		echo "<th> LAG </th>";
+		echo "<th> LMI </th>";
+		echo "</tr>";
+		echo "</table>";
+		?>
+      
       <!-- FOOTER -->
       <footer>
         <!-- Contact Us -->
