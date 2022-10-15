@@ -5,16 +5,18 @@
     <link rel="icon" href="./img/logo-upslp.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilo.css">
+    
+    <link rel="stylesheet" href="./assets/css/leadmark.css">
     <script>
         function alertas(){
             var contra="admin";
             var usuario="admin";
             var error="";
 
-            var dato1=document.getElementById("user").value;//nombre
+            var dato1=document.getElementById("idA").value;//nombre
             if(dato1=="") error+=" Falta user "
 
-            var dato2=document.getElementById("pass").value;
+            var dato2=document.getElementById("contraA").value;
             if(dato2=="") error+=" Falta contraseña ";
 
             if(dato1==contra && dato2==usuario){
@@ -26,15 +28,16 @@
         }
     </script>
 </head>
+
 <body>
     <div class="login-box">
         <h1>Inicia sesion</h1>
-        <form name="form" action="./alumnos.html">
+        <form name="form" action="./administrador.html" method="post">
             <label for="username">Usuario</label>
-            <input type="text" name="usuario" id="user" placeholder="Ingrese usuario">
+            <input type="text" name="usuario" id="idA" placeholder="Ingrese usuario">
 
             <label for="password">Contraseña</label>
-            <input type="password" name="contra" id="pass" placeholder="Ingrese contraseña">
+            <input type="password" name="contra" id="contraA" placeholder="Ingrese contraseña">
 
             <input  type="submit" onclick="alertas()" type="button" value="Iniciar sesion">
 
@@ -44,7 +47,6 @@
     </div>
 </body>
 <footer>
-    <p>Programacion Web II - Tercer semestre <br>Ana Karen Cuenca Esquivel - 177932</p>
     <div class="redes">
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -52,10 +54,4 @@
     </div>
 
 </footer>
-<!--
-<footer> 
-    <p>Ana Karen Cuenca Esquivel - 177932<br>UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI<br>Programacion Web I</p>
-</footer>
--->
-
 </html>

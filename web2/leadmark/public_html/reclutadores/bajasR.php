@@ -5,40 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-    <link rel="icon" type="image/gif" href="./assets/imgs/logoupslp.jpg">
-    <title>Administrador UPSLP</title>
+    <link rel="icon" type="image/gif" href="../assets/imgs/logoupslp.jpg">
+    <title>Bajas Empresa</title>
     <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="assets/css/leadmark.css">
+	<link rel="stylesheet" href="../assets/css/leadmark.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/logoupslp.jpg" alt="">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/imgs/logoupslp.jpg" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
-                  <li class="nav-item">
-                     <a class="nav-link" href="./index.html">Home</a>
-                 </li>                   
                     <li class="nav-item">
-                        <a class="nav-link" href="./alumnos.html">Socilizante</a>
-                    </li>
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>                   
                     <li class="nav-item">
-                        <a class="nav-link" href="./administrador.html">Administrador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reclutador.html">Reclutador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a>
+                        <a class="nav-link" href="../administrador.html">pagina anterior</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +41,7 @@
     <header class="header">
         <div class="overlay">
             <h1 class="subtitle">Ciencia, Tecnologia y Cultura al servicio del ser humano</h1>
-            <h1 class="title">Administrador <br> UPSLP</h1>  
+            <h1 class="title">Bajas <br> Reclutadores</h1>  
         </div>  
         <div class="shape">
             <svg viewBox="0 0 1500 200">
@@ -59,42 +50,36 @@
         </div>  
         <div class="mouse-icon"><div class="wheel"></div></div>
     </header>
-    <section class="section" id="about">
     <div class="container" align="center">
-        <h2>Que deseas hacer?</h2> <br>
-        <div class="dropdown d-inline-block">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Empresas
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="./empresas/bajasE.php">Baja</a>
-            <a class="dropdown-item" href="./pendiente">Consulta</a>
-            <a class="dropdown-item" href="./pendiente">Modificaciones</a>
-            </div>
-         </div>
-         <div class="dropdown d-inline-block">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Reclutadores
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="./reclutadores/bajasR.php">Baja</a>
-            <a class="dropdown-item" href="./pendiente">Consulta</a>
-            <a class="dropdown-item" href="./pendiente">Modificaciones</a>
-            </div>
-         </div>
-         <div class="dropdown d-inline-block">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Solicitantes
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="./solicitantes/bajasS.php">Baja</a>
-            <a class="dropdown-item" href="./pendiente">Consulta</a>
-            <a class="dropdown-item" href="./pendiente">Modificaciones</a>
-            </div>
-         </div>
-        <button class="btn btn-outline-primary"><a href="./admins/altaA.php">Administradores</a> </button>
+    <h1>Rellena los datos</h1>
+<form  method="post"> <!--action="<?php echo $_SERVER['PHP_SELF']; ?>"-->
+RFC:        <input type="text" name="rfc"> <br>
+<input type="submit" name="enviar">
+</form>
+<!--
+<?php
+include("config.php");
+if(isset($_POST['rfc']))
+{
+    echo "{$_POST['rfc']}<br>";
+    $conexion = mysqli_connect($server,$db_user,$db_pass) or die("Problemas en la conexion");
+    if($conexion)
+    {
+        mysqli_select_db($conexion,$database) or die("Problemas en la selec. de BDs");
+        $query="DELETE FROM clientes WHERE RFC = '$_POST[rfc]';";
+        echo "La consulta generada es: <br>" .$query;
+        if (mysqli_query($conexion,$query)) echo "<br> dato eliminado<br>";
+        mysqli_close($conexion);
+    }
+}
+else{
+        if(isset($_POST['enviar'])){
+            if(isset($_POST['rfc'])==false || $_POST['rfc']=="")
+                echo "Falta definir RFC<br>";
+    }
+}
+?>-->
     </div>
-</section>
     <!-- Contact Section -->
     <section id="contact" class="section has-img-bg pb-0">
         <div class="container">
