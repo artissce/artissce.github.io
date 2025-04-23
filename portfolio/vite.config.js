@@ -1,9 +1,9 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { ghPages } from 'vite-plugin-gh-pages'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), ghPages()],
-  base: '/artissce.github.io/'
+  plugins: [vue()],
+  base: '/portfolio/'
 })
