@@ -1,5 +1,5 @@
-# 💼 Personal Portfolio
+# 💼 Personal Portfolio  
 
-This is the previous version of my portfolio. The new one is on development, wait for it:)
+This is the previous version of my portfolio. The new one is under development — stay tuned!:)  
 
-[New link] (https://artissce.github.io/portfolio/)
+**👉 [Visit New Portfolio](https://artissce.github.io/portfolio/)**
