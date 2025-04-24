@@ -10,6 +10,54 @@
     />
     <link rel="shortcut icon" href="images/catlogo.png" />
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        #alerta-version {
+            background-color: #ffd966;
+            color: #333;
+            padding: 15px 20px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            max-width: 80%; /* Ajusta el tamaño máximo */
+            word-wrap: break-word; /* Asegura que el texto se ajuste */
+        }
+
+        #alerta-version a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #alerta-version a:hover {
+            text-decoration: underline;
+        }
+
+        #alerta-version span {
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        #alerta-espanol {
+            display: block;
+        }
+
+        #alerta-ingles {
+            display: none;
+        }
+
+        /* Opcional: Establecer un idioma predeterminado en función del navegador o de las preferencias del usuario */
+
+    </style>
     <title>Portafolio</title>
 </head>
 
@@ -48,6 +96,16 @@
             </div>
         </div>
     </section>
+    <div id="alerta-version">
+        <div class="alerta-texto" id="alerta-espanol">
+            <p>Estás viendo la versión anterior. El nuevo portafolio está en desarrollo y disponible en el siguiente enlace: <a href="https://artissce.github.io/portfolio/" target="_blank">Nuevo Portafolio</a>. ¡Gracias por tu paciencia!</p>
+        </div>
+        <div class="alerta-texto" id="alerta-ingles">
+            <p>You are viewing the old version. The new portfolio is development and available at the following link: <a href="https://artissce.github.io/portfolio/" target="_blank">New Portfolio</a>. Thank you for your patience!</p>
+        </div>
+        <span onclick="cerrarAlerta()">X</span>
+    </div>
+    
 
     <!-- SECCION S O B R E M I -->
     <section id="sobremi">
@@ -383,6 +441,23 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function cerrarAlerta() {
+            document.getElementById('alerta-version').style.display = 'none';
+        }
+    
+        // Detectar el idioma del navegador
+        window.onload = function() {
+            var idioma = navigator.language || navigator.userLanguage; // Detectar el idioma
+            if (idioma.includes("es")) { // Si el idioma es español
+                document.getElementById('alerta-espanol').style.display = 'block';
+                document.getElementById('alerta-ingles').style.display = 'none';
+            } else { // Si no es español, mostramos el inglés
+                document.getElementById('alerta-espanol').style.display = 'none';
+                document.getElementById('alerta-ingles').style.display = 'block';
+            }
+        }
+    </script>    
 
 </body>
 
